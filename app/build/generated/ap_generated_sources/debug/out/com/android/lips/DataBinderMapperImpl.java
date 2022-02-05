@@ -7,7 +7,9 @@ import androidx.databinding.DataBinderMapper;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
 import com.android.lips.databinding.ActivityMainBindingImpl;
+import com.android.lips.databinding.ActivityRegisterBindingImpl;
 import com.android.lips.databinding.ActivitySplashBindingImpl;
+import com.android.lips.databinding.ActivityUploadNoticeBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
@@ -21,13 +23,19 @@ import java.util.List;
 public class DataBinderMapperImpl extends DataBinderMapper {
   private static final int LAYOUT_ACTIVITYMAIN = 1;
 
-  private static final int LAYOUT_ACTIVITYSPLASH = 2;
+  private static final int LAYOUT_ACTIVITYREGISTER = 2;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(2);
+  private static final int LAYOUT_ACTIVITYSPLASH = 3;
+
+  private static final int LAYOUT_ACTIVITYUPLOADNOTICE = 4;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(4);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.activity_register, LAYOUT_ACTIVITYREGISTER);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.activity_splash, LAYOUT_ACTIVITYSPLASH);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.activity_upload_notice, LAYOUT_ACTIVITYUPLOADNOTICE);
   }
 
   @Override
@@ -45,11 +53,23 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for activity_main is invalid. Received: " + tag);
         }
+        case  LAYOUT_ACTIVITYREGISTER: {
+          if ("layout/activity_register_0".equals(tag)) {
+            return new ActivityRegisterBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_register is invalid. Received: " + tag);
+        }
         case  LAYOUT_ACTIVITYSPLASH: {
           if ("layout/activity_splash_0".equals(tag)) {
             return new ActivitySplashBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for activity_splash is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ACTIVITYUPLOADNOTICE: {
+          if ("layout/activity_upload_notice_0".equals(tag)) {
+            return new ActivityUploadNoticeBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_upload_notice is invalid. Received: " + tag);
         }
       }
     }
@@ -104,11 +124,13 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(2);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(4);
 
     static {
       sKeys.put("layout/activity_main_0", com.android.lips.R.layout.activity_main);
+      sKeys.put("layout/activity_register_0", com.android.lips.R.layout.activity_register);
       sKeys.put("layout/activity_splash_0", com.android.lips.R.layout.activity_splash);
+      sKeys.put("layout/activity_upload_notice_0", com.android.lips.R.layout.activity_upload_notice);
     }
   }
 }

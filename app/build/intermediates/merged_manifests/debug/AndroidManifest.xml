@@ -19,6 +19,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.Lips" >
         <activity
+            android:name="com.android.lips.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.android.lips.UploadNotice"
+            android:exported="false" />
+        <activity
             android:name="com.android.lips.SplashActivity"
             android:exported="true" >
             <intent-filter>

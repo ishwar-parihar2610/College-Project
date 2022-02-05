@@ -11,7 +11,7 @@
 9-->F:\college Project\Lips\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:5:5-30:19
+11-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:5:5-36:19
 12        android:allowBackup="true"
 12-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -29,61 +29,73 @@
 20        android:theme="@style/Theme.Lips" >
 20-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:11:9-42
 21        <activity
-21-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:12:9-20:20
-22            android:name="com.android.lips.SplashActivity"
-22-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:13:13-43
-23            android:exported="true" >
-23-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:14:13-36
-24            <intent-filter>
-24-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:15:13-19:29
-25                <action android:name="android.intent.action.MAIN" />
-25-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:16:17-69
-25-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:16:25-66
-26
-27                <category android:name="android.intent.category.LAUNCHER" />
-27-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:18:17-77
-27-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:18:27-74
-28            </intent-filter>
-29        </activity>
-30        <activity
-30-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:21:9-29:20
-31            android:name="com.android.lips.MainActivity"
-31-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:22:13-41
-32            android:exported="true" >
-32-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:23:13-36
-33            <intent-filter>
-33-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:15:13-19:29
-34                <action android:name="android.intent.action.MAIN" />
-34-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:16:17-69
-34-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:16:25-66
-35
-36                <category android:name="android.intent.category.LAUNCHER" />
-36-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:18:17-77
-36-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:18:27-74
-37            </intent-filter>
-38        </activity>
-39
-40        <provider
-40-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\81d96525f144ed8e530d13e60c7279d7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-41            android:name="androidx.startup.InitializationProvider"
-41-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\81d96525f144ed8e530d13e60c7279d7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
-42            android:authorities="com.android.lips.androidx-startup"
-42-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\81d96525f144ed8e530d13e60c7279d7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
-43            android:exported="false" >
-43-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\81d96525f144ed8e530d13e60c7279d7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
-44            <meta-data
-44-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\81d96525f144ed8e530d13e60c7279d7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-45                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-45-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\81d96525f144ed8e530d13e60c7279d7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
-46                android:value="androidx.startup" />
-46-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\81d96525f144ed8e530d13e60c7279d7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
-47            <meta-data
-47-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\User\.gradle\caches\transforms-3\b432b0f1f360dbae5b69cd23f7b68727\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-48                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-48-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\User\.gradle\caches\transforms-3\b432b0f1f360dbae5b69cd23f7b68727\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-49                android:value="androidx.startup" />
-49-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\User\.gradle\caches\transforms-3\b432b0f1f360dbae5b69cd23f7b68727\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-50        </provider>
-51    </application>
-52
-53</manifest>
+21-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:12:9-14:40
+22            android:name="com.android.lips.RegisterActivity"
+22-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:13:13-45
+23            android:exported="false" />
+23-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:14:13-37
+24        <activity
+24-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:15:9-17:40
+25            android:name="com.android.lips.UploadNotice"
+25-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:16:13-41
+26            android:exported="false" />
+26-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:17:13-37
+27        <activity
+27-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:18:9-26:20
+28            android:name="com.android.lips.SplashActivity"
+28-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:19:13-43
+29            android:exported="true" >
+29-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:20:13-36
+30            <intent-filter>
+30-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:21:13-25:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:22:17-69
+31-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:22:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:24:17-77
+33-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:24:27-74
+34            </intent-filter>
+35        </activity>
+36        <activity
+36-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:27:9-35:20
+37            android:name="com.android.lips.MainActivity"
+37-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:28:13-41
+38            android:exported="true" >
+38-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:29:13-36
+39            <intent-filter>
+39-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:21:13-25:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:22:17-69
+40-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:22:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:24:17-77
+42-->F:\college Project\Lips\app\src\main\AndroidManifest.xml:24:27-74
+43            </intent-filter>
+44        </activity>
+45
+46        <provider
+46-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\81d96525f144ed8e530d13e60c7279d7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+47            android:name="androidx.startup.InitializationProvider"
+47-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\81d96525f144ed8e530d13e60c7279d7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+48            android:authorities="com.android.lips.androidx-startup"
+48-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\81d96525f144ed8e530d13e60c7279d7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+49            android:exported="false" >
+49-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\81d96525f144ed8e530d13e60c7279d7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+50            <meta-data
+50-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\81d96525f144ed8e530d13e60c7279d7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+51                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+51-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\81d96525f144ed8e530d13e60c7279d7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+52                android:value="androidx.startup" />
+52-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\81d96525f144ed8e530d13e60c7279d7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+53            <meta-data
+53-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\User\.gradle\caches\transforms-3\b432b0f1f360dbae5b69cd23f7b68727\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+54                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+54-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\User\.gradle\caches\transforms-3\b432b0f1f360dbae5b69cd23f7b68727\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+55                android:value="androidx.startup" />
+55-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\User\.gradle\caches\transforms-3\b432b0f1f360dbae5b69cd23f7b68727\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+56        </provider>
+57    </application>
+58
+59</manifest>

@@ -4,17 +4,47 @@ package com.android.lips.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.android.lips.R;
+import com.google.android.material.button.MaterialButton;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class ActivitySplashBinding extends ViewDataBinding {
-  protected ActivitySplashBinding(Object _bindingComponent, View _root, int _localFieldCount) {
+  @NonNull
+  public final EditText emailField;
+
+  @NonNull
+  public final MaterialButton loginBtn;
+
+  @NonNull
+  public final ConstraintLayout loginForm;
+
+  @NonNull
+  public final ImageView luckyLogo;
+
+  @NonNull
+  public final EditText passwordField;
+
+  @NonNull
+  public final MaterialButton registerBtn;
+
+  protected ActivitySplashBinding(Object _bindingComponent, View _root, int _localFieldCount,
+      EditText emailField, MaterialButton loginBtn, ConstraintLayout loginForm, ImageView luckyLogo,
+      EditText passwordField, MaterialButton registerBtn) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.emailField = emailField;
+    this.loginBtn = loginBtn;
+    this.loginForm = loginForm;
+    this.luckyLogo = luckyLogo;
+    this.passwordField = passwordField;
+    this.registerBtn = registerBtn;
   }
 
   @NonNull

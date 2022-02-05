@@ -4,6 +4,10 @@
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_button_background.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\button_background.xml"
+    },
+    {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_cart_item_bacground.xml.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\cart_item_bacground.xml"
     },
@@ -140,6 +144,10 @@
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_register.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\font_rubik_regular.ttf.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\font\\rubik_regular.ttf"
     },
@@ -156,6 +164,10 @@
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\font\\rubik_lightitalic.ttf"
     },
     {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_upload_notice.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_upload_notice.xml"
+    },
+    {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\font_rubik_medium.ttf.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\font\\rubik_medium.ttf"
     },
@@ -170,5 +182,9 @@
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\font_rubik_bolditalic.ttf.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\font\\rubik_bolditalic.ttf"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\anim_slide_up.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\anim\\slide_up.xml"
     }
 ]
