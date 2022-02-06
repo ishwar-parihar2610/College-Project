@@ -9,10 +9,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Layout;
+import android.util.Patterns;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.android.lips.databinding.ActivitySplashBinding;
 
@@ -37,11 +39,16 @@ public class SplashActivity extends AppCompatActivity {
         }, 0);
 
         binding.loginBtn.setOnClickListener(v -> {
-            startActivity(new Intent(SplashActivity.this,MainActivity.class));
+            if(isValidSignInDetails()){
+                startActivity(new Intent(SplashActivity.this,MainActivity.class));
+            }
+
         });
 
         binding.registerBtn.setOnClickListener(v->{
-            startActivity(new Intent(SplashActivity.this,RegisterActivity.class));
+
+                startActivity(new Intent(SplashActivity.this,RegisterActivity.class));
+
         });
 //        runOnUiThread(new Runnable() {
 //            @Override
@@ -58,6 +65,8 @@ public class SplashActivity extends AppCompatActivity {
     }
 
 void newActivity(ConstraintLayout layout){
+
+
       Handler handler=new Handler();
       handler.postDelayed(new Runnable() {
           @Override
@@ -73,5 +82,23 @@ void newActivity(ConstraintLayout layout){
 //            }
 //        },5000);
 
+    }
+    private void showToast(String message) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+    }
+
+    private Boolean isValidSignInDetails() {
+        if (binding.emailField.getText().toString().trim().isEmpty()) {
+            showToast("Enter Email");
+            return false;
+        } else if (!Patterns.EMAIL_ADDRESS.matcher(binding.emailField.getText().toString()).matches()) {
+            showToast("Enter valid Email");
+            return false;
+        } else if (binding.passwordField.getText().toString().trim().isEmpty()) {
+            showToast("Enter Password");
+            return false;
+        } else {
+            return true;
+        }
     }
 }

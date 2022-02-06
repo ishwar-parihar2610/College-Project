@@ -37,6 +37,15 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   public final TextView deleteText;
 
   @NonNull
+  public final MaterialCardView logoutCard;
+
+  @NonNull
+  public final ImageView logoutImg;
+
+  @NonNull
+  public final TextView logoutText;
+
+  @NonNull
   public final ImageView noticeImg;
 
   @NonNull
@@ -77,11 +86,12 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
 
   protected ActivityMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
       TextView adminText, AppBarLayout appBar, TextView dashBoardText, MaterialCardView deleteCard,
-      ImageView deleteNotice, TextView deleteText, ImageView noticeImg, TextView noticeText,
-      ScrollView scrollView, ImageView uploadEBook, MaterialCardView uploadEBookCard,
-      TextView uploadEBookText, MaterialCardView uploadFacilityCard, ImageView uploadFacilityImg,
-      TextView uploadFacilityText, MaterialCardView uploadImageCard, ImageView uploadImg,
-      MaterialCardView uploadNoticeCard, TextView uploadText) {
+      ImageView deleteNotice, TextView deleteText, MaterialCardView logoutCard, ImageView logoutImg,
+      TextView logoutText, ImageView noticeImg, TextView noticeText, ScrollView scrollView,
+      ImageView uploadEBook, MaterialCardView uploadEBookCard, TextView uploadEBookText,
+      MaterialCardView uploadFacilityCard, ImageView uploadFacilityImg, TextView uploadFacilityText,
+      MaterialCardView uploadImageCard, ImageView uploadImg, MaterialCardView uploadNoticeCard,
+      TextView uploadText) {
     super(_bindingComponent, _root, _localFieldCount);
     this.adminText = adminText;
     this.appBar = appBar;
@@ -89,6 +99,9 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
     this.deleteCard = deleteCard;
     this.deleteNotice = deleteNotice;
     this.deleteText = deleteText;
+    this.logoutCard = logoutCard;
+    this.logoutImg = logoutImg;
+    this.logoutText = logoutText;
     this.noticeImg = noticeImg;
     this.noticeText = noticeText;
     this.scrollView = scrollView;

@@ -9,6 +9,7 @@ import androidx.databinding.ViewDataBinding;
 import com.android.lips.databinding.ActivityMainBindingImpl;
 import com.android.lips.databinding.ActivityRegisterBindingImpl;
 import com.android.lips.databinding.ActivitySplashBindingImpl;
+import com.android.lips.databinding.ActivityUploadImageBindingImpl;
 import com.android.lips.databinding.ActivityUploadNoticeBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
@@ -27,14 +28,17 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_ACTIVITYSPLASH = 3;
 
-  private static final int LAYOUT_ACTIVITYUPLOADNOTICE = 4;
+  private static final int LAYOUT_ACTIVITYUPLOADIMAGE = 4;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(4);
+  private static final int LAYOUT_ACTIVITYUPLOADNOTICE = 5;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(5);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.activity_register, LAYOUT_ACTIVITYREGISTER);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.activity_splash, LAYOUT_ACTIVITYSPLASH);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.activity_upload_image, LAYOUT_ACTIVITYUPLOADIMAGE);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.activity_upload_notice, LAYOUT_ACTIVITYUPLOADNOTICE);
   }
 
@@ -64,6 +68,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new ActivitySplashBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for activity_splash is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ACTIVITYUPLOADIMAGE: {
+          if ("layout/activity_upload_image_0".equals(tag)) {
+            return new ActivityUploadImageBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_upload_image is invalid. Received: " + tag);
         }
         case  LAYOUT_ACTIVITYUPLOADNOTICE: {
           if ("layout/activity_upload_notice_0".equals(tag)) {
@@ -124,12 +134,13 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(4);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(5);
 
     static {
       sKeys.put("layout/activity_main_0", com.android.lips.R.layout.activity_main);
       sKeys.put("layout/activity_register_0", com.android.lips.R.layout.activity_register);
       sKeys.put("layout/activity_splash_0", com.android.lips.R.layout.activity_splash);
+      sKeys.put("layout/activity_upload_image_0", com.android.lips.R.layout.activity_upload_image);
       sKeys.put("layout/activity_upload_notice_0", com.android.lips.R.layout.activity_upload_notice);
     }
   }

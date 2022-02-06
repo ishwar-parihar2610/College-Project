@@ -33,6 +33,9 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
         sViewsWithIds.put(R.id.deleteCard, 17);
         sViewsWithIds.put(R.id.deleteNotice, 18);
         sViewsWithIds.put(R.id.deleteText, 19);
+        sViewsWithIds.put(R.id.logoutCard, 20);
+        sViewsWithIds.put(R.id.logoutImg, 21);
+        sViewsWithIds.put(R.id.logoutText, 22);
     }
     // views
     @NonNull
@@ -43,7 +46,7 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityMainBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 20, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 23, sIncludes, sViewsWithIds));
     }
     private ActivityMainBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
@@ -53,6 +56,9 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
             , (com.google.android.material.card.MaterialCardView) bindings[17]
             , (android.widget.ImageView) bindings[18]
             , (android.widget.TextView) bindings[19]
+            , (com.google.android.material.card.MaterialCardView) bindings[20]
+            , (android.widget.ImageView) bindings[21]
+            , (android.widget.TextView) bindings[22]
             , (android.widget.ImageView) bindings[6]
             , (android.widget.TextView) bindings[7]
             , (android.widget.ScrollView) bindings[4]
