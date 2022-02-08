@@ -1,5 +1,9 @@
 [
     {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_upload_pdf.xml",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_upload_pdf.xml"
+    },
+    {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_register.xml",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_register.xml"
     },

@@ -11,6 +11,7 @@ import com.android.lips.databinding.ActivityRegisterBindingImpl;
 import com.android.lips.databinding.ActivitySplashBindingImpl;
 import com.android.lips.databinding.ActivityUploadImageBindingImpl;
 import com.android.lips.databinding.ActivityUploadNoticeBindingImpl;
+import com.android.lips.databinding.ActivityUploadPdfBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
@@ -32,7 +33,9 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_ACTIVITYUPLOADNOTICE = 5;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(5);
+  private static final int LAYOUT_ACTIVITYUPLOADPDF = 6;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(6);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
@@ -40,6 +43,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.activity_splash, LAYOUT_ACTIVITYSPLASH);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.activity_upload_image, LAYOUT_ACTIVITYUPLOADIMAGE);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.activity_upload_notice, LAYOUT_ACTIVITYUPLOADNOTICE);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.activity_upload_pdf, LAYOUT_ACTIVITYUPLOADPDF);
   }
 
   @Override
@@ -80,6 +84,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new ActivityUploadNoticeBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for activity_upload_notice is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ACTIVITYUPLOADPDF: {
+          if ("layout/activity_upload_pdf_0".equals(tag)) {
+            return new ActivityUploadPdfBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_upload_pdf is invalid. Received: " + tag);
         }
       }
     }
@@ -134,7 +144,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(5);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(6);
 
     static {
       sKeys.put("layout/activity_main_0", com.android.lips.R.layout.activity_main);
@@ -142,6 +152,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put("layout/activity_splash_0", com.android.lips.R.layout.activity_splash);
       sKeys.put("layout/activity_upload_image_0", com.android.lips.R.layout.activity_upload_image);
       sKeys.put("layout/activity_upload_notice_0", com.android.lips.R.layout.activity_upload_notice);
+      sKeys.put("layout/activity_upload_pdf_0", com.android.lips.R.layout.activity_upload_pdf);
     }
   }
 }

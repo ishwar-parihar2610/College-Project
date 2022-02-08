@@ -883,6 +883,18 @@ attr region_widthLessThan
 attr region_widthMoreThan
 attr reverseLayout
 attr rippleColor
+attr riv_border_color
+attr riv_border_width
+attr riv_corner_radius
+attr riv_corner_radius_bottom_left
+attr riv_corner_radius_bottom_right
+attr riv_corner_radius_top_left
+attr riv_corner_radius_top_right
+attr riv_mutate_background
+attr riv_oval
+attr riv_tile_mode
+attr riv_tile_mode_x
+attr riv_tile_mode_y
 attr rotationCenterId
 attr round
 attr roundPercent
@@ -1226,6 +1238,10 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
+color browser_actions_bg_grey
+color browser_actions_divider_color
+color browser_actions_text_color
+color browser_actions_title_color
 color button_material_dark
 color button_material_light
 color cardview_dark_background
@@ -2637,6 +2653,8 @@ dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
 dimen action_bar_size
 dimen appcompat_dialog_background_inset
+dimen browser_actions_context_menu_max_width
+dimen browser_actions_context_menu_min_padding
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -3276,6 +3294,8 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_notics
+drawable ic_pdf
+drawable image_background
 drawable lucky
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
@@ -3409,6 +3429,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addImageTv
 id adjust_height
 id adjust_width
 id adminText
@@ -3440,6 +3461,11 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id browser_actions_header_text
+id browser_actions_menu_item_icon
+id browser_actions_menu_item_text
+id browser_actions_menu_items
+id browser_actions_menu_view
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3462,6 +3488,7 @@ id chip3
 id chip_group
 id chronometer
 id circle_center
+id clamp
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -3587,6 +3614,7 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id layoutImage
 id left
 id leftToRight
 id legacy
@@ -3628,6 +3656,7 @@ id media_actions
 id message
 id middle
 id mini
+id mirror
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -3700,17 +3729,20 @@ id passwordField
 id password_toggle
 id path
 id pathRelative
+id pdfTitle
 id peekHeight
 id percent
 id pin
 id position
 id postLayout
+id profileImage
 id progress_circular
 id progress_horizontal
 id radio
 id ratio
 id rectangles
 id registerBtn
+id repeat
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3957,6 +3989,9 @@ layout activity_register
 layout activity_splash
 layout activity_upload_image
 layout activity_upload_notice
+layout activity_upload_pdf
+layout browser_actions_context_menu_page
+layout browser_actions_context_menu_row
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -4118,6 +4153,7 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string default_web_client_id
+string define_roundedimageview
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -4130,6 +4166,15 @@ string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string library_roundedimageview_author
+string library_roundedimageview_authorWebsite
+string library_roundedimageview_isOpenSource
+string library_roundedimageview_libraryDescription
+string library_roundedimageview_libraryName
+string library_roundedimageview_libraryVersion
+string library_roundedimageview_libraryWebsite
+string library_roundedimageview_licenseId
+string library_roundedimageview_repositoryLink
 string m3_ref_typeface_brand_display_regular
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
@@ -5360,6 +5405,7 @@ styleable RadialViewGroup materialCircleRadius
 styleable RangeSlider minSeparation values
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle
 styleable RecyclerView android_orientation android_clipToPadding android_descendantFocusability fastScrollEnabled fastScrollHorizontalThumbDrawable fastScrollHorizontalTrackDrawable fastScrollVerticalThumbDrawable fastScrollVerticalTrackDrawable layoutManager reverseLayout spanCount stackFromEnd
+styleable RoundedImageView android_scaleType riv_border_color riv_border_width riv_corner_radius riv_corner_radius_bottom_left riv_corner_radius_bottom_right riv_corner_radius_top_left riv_corner_radius_top_right riv_mutate_background riv_oval riv_tile_mode riv_tile_mode_x riv_tile_mode_y
 styleable ScrimInsetsFrameLayout insetForeground
 styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchView android_focusable android_maxWidth android_inputType android_imeOptions closeIcon commitIcon defaultQueryHint goIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon submitBackground suggestionRowLayout voiceIcon

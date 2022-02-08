@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
             preferenceManager.Clear();
             startActivity(new Intent(MainActivity.this,SplashActivity.class));
         });
+        binding.uploadEBookCard.setOnClickListener(v->{
+            startActivity(new Intent(MainActivity.this,UploadPdfActivity.class));
+        });
     }
 
 

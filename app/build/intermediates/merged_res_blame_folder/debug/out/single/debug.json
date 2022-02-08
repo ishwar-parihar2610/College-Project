@@ -16,12 +16,12 @@
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
@@ -30,6 +30,10 @@
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_cloud_upload_24.xml.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\ic_baseline_cloud_upload_24.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_upload_pdf.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_upload_pdf.xml"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
@@ -70,6 +74,10 @@
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\font_rubik_italic.ttf.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\font\\rubik_italic.ttf"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_pdf.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\ic_pdf.xml"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\font_rubik_extrabolditalic.ttf.flat",
@@ -126,6 +134,10 @@
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_logout.xml.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\ic_logout.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_image_background.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\image_background.xml"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\font_rubik_mediumitalic.ttf.flat",

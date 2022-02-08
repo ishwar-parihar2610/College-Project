@@ -11,6 +11,7 @@ public class Constant {
         public static final String KEY_OCCASION_TITLE="occasion";
         public static final String KEY_OCCASION_IMAGE="image";
         public static final String KEY_DOCUMENT_USER="User";
+        public static final String KEY_PROFILE_IMAGE="profileImage";
 
 
         public static final String KEY_NAME="name";
