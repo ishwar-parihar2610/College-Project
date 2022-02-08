@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import com.android.lips.databinding.ActivityMainBinding;
+import com.android.lips.utilities.PreferenceManager;
 
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
@@ -20,6 +21,12 @@ public class MainActivity extends AppCompatActivity {
         });
         binding.uploadImageCard.setOnClickListener(v->{
             startActivity(new Intent(MainActivity.this,ActivityUploadImage.class));
+        });
+
+        binding.logoutCard.setOnClickListener(v->{
+            PreferenceManager preferenceManager=new PreferenceManager(this);
+            preferenceManager.Clear();
+            startActivity(new Intent(MainActivity.this,SplashActivity.class));
         });
     }
 

@@ -7,6 +7,11 @@ public class Constant {
 
         public static final String KEY_COLLECTION_ADMIN="Admin";
         public static final String KEY_DOCUMENT_NOTICEBOARD="noticeBord";
+        public static final String KEY_DOCUMENT_GALLERY="gallery";
+        public static final String KEY_OCCASION_TITLE="occasion";
+        public static final String KEY_OCCASION_IMAGE="image";
+        public static final String KEY_DOCUMENT_USER="User";
+
 
         public static final String KEY_NAME="name";
         public static final String KEY_NOTICE_TITLE="title";
