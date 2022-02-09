@@ -84,6 +84,17 @@
 
     </com.google.android.material.card.MaterialCardView>
 
+    <TextView
+        android:id="@+id/pdfText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No File Selected"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/uploadE_BookCard"
+        app:layout_constraintStart_toStartOf="@id/uploadE_BookCard"
+        />
+
     <EditText
         android:inputType="text"
         android:id="@+id/pdfTitle"
@@ -91,7 +102,7 @@
         android:textSize="@dimen/_12ssp"
         android:layout_height="@dimen/_50sdp"
         app:layout_constraintTop_toBottomOf="@id/uploadE_BookCard"
-        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_50sdp"
         app:layout_constraintStart_toStartOf="@id/uploadE_BookCard"
         app:layout_constraintEnd_toEndOf="@id/uploadE_BookCard"
         android:hint="Notice Title"

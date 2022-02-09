@@ -3729,6 +3729,7 @@ id passwordField
 id password_toggle
 id path
 id pathRelative
+id pdfText
 id pdfTitle
 id peekHeight
 id percent

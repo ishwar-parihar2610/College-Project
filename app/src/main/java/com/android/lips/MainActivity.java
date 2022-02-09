@@ -1,7 +1,9 @@
 package com.android.lips;
 
 
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +14,7 @@ import com.android.lips.utilities.PreferenceManager;
 
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

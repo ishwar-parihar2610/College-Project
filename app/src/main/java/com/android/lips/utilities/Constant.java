@@ -12,6 +12,11 @@ public class Constant {
         public static final String KEY_OCCASION_IMAGE="image";
         public static final String KEY_DOCUMENT_USER="User";
         public static final String KEY_PROFILE_IMAGE="profileImage";
+        public static final String KEY_E_BOOK_DOCUMENT="e-book";
+        public static final String KEY_BOOK_PDF_COLLECTION="book_pdf";
+        public static final String KEY_BOOK_TITLE="bookTitle";
+
+
 
 
         public static final String KEY_NAME="name";
