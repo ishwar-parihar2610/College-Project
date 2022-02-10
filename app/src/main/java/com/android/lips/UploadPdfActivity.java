@@ -69,6 +69,7 @@ public class UploadPdfActivity extends AppCompatActivity {
             } else if (pdfData == null) {
                 showToast("Please Upload Pdf");
             } else {
+                title=binding.pdfTitle.getText().toString();
                 uploadPdf();
             }
         });

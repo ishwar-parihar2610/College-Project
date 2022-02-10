@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -18,6 +19,7 @@ import android.widget.Toast;
 import com.android.lips.databinding.ActivityRegisterBinding;
 import com.android.lips.utilities.Constant;
 import com.android.lips.utilities.PreferenceManager;
+import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -25,7 +27,12 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -36,22 +43,30 @@ public class RegisterActivity extends AppCompatActivity {
     ActivityRegisterBinding binding;
     FirebaseFirestore database;
     FirebaseAuth _auth;
-    int requestCodeValue=1;
+    int requestCodeValue = 1;
     boolean isRegister = false;
     Bitmap bitmap;
     String encodeImage;
+    ProgressDialog progressDialog;
+    StorageReference storageReference;
+    Uri imageUrl;
+    FirebaseDatabase firebaseDatabase;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         database = FirebaseFirestore.getInstance();
+
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        storageReference = FirebaseStorage.getInstance("gs://mycollegeapp-a3012.appspot.com/").getReference();
         _auth = FirebaseAuth.getInstance();
+        progressDialog = new ProgressDialog(this);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_register);
 
-        binding.layoutImage.setOnClickListener(v->{
-            Intent pickImage=new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-            startActivityForResult(pickImage,requestCodeValue);
+        binding.layoutImage.setOnClickListener(v -> {
+            Intent pickImage = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+            startActivityForResult(pickImage, requestCodeValue);
         });
         binding.registerBtn.setOnClickListener(v -> {
             if (isValidSignUpDetails()) {
@@ -72,7 +87,7 @@ public class RegisterActivity extends AppCompatActivity {
                     preferenceManager.putString(Constant.KEY_USER_ID, _auth.getUid());
 
                     FirebaseUser user = _auth.getCurrentUser();
-                    storeToFirestore(email, password, name);
+                    uploadImage(email, password, name);
 
 
                 }
@@ -85,23 +100,33 @@ public class RegisterActivity extends AppCompatActivity {
         });
     }
 
-    private void storeToFirestore(String email, String password, String name) {
+    private void storeToFirestore(String email, String password, String name, String imgUrl) {
+
+        progressDialog.setTitle("Please Wait....");
+        progressDialog.setMessage("Registration");
+        progressDialog.show();
+
         HashMap<String, String> registerValue = new HashMap<>();
         registerValue.put(Constant.KEY_EMAIL, email);
         registerValue.put(Constant.KEY_PASSWORD, password);
         registerValue.put(Constant.KEY_NAME, name);
-        registerValue.put(Constant.KEY_PROFILE_IMAGE,encodeImage);
+        registerValue.put(Constant.KEY_PROFILE_IMAGE, imgUrl);
 
-        database.collection(Constant.KEY_COLLECTION_ADMIN).document(Constant.KEY_DOCUMENT_USER).collection("userInfo").document().set(registerValue).addOnSuccessListener(new OnSuccessListener<Void>() {
+
+        database.collection(Constant.KEY_COLLECTION_ADMIN).document(Constant.KEY_DOCUMENT_USER).collection("userInfo").document(binding.nameField.getText().toString()).set(registerValue).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void unused) {
+                // showToast("Register Success full");
+                progressDialog.dismiss();
                 showToast("Register Success full");
                 startActivity(new Intent(RegisterActivity.this, MainActivity.class));
                 finishAffinity();
+                //finishAffinity();
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
+                progressDialog.dismiss();
                 showToast("Register Failed " + e.getMessage());
             }
         });
@@ -135,25 +160,73 @@ public class RegisterActivity extends AppCompatActivity {
 
     }
 
-    private String encodedImage(Bitmap bitmap){
-        int previewWidth=150;
-        int previewHeight=bitmap.getHeight()+previewWidth/bitmap.getWidth();
-        Bitmap previewBitmap=Bitmap.createScaledBitmap(bitmap,previewWidth,previewHeight,false);
-        ByteArrayOutputStream byteArrayOutputStream=new ByteArrayOutputStream();
-        previewBitmap.compress(Bitmap.CompressFormat.JPEG,50,byteArrayOutputStream);
-        byte[] bytes=byteArrayOutputStream.toByteArray();
-        return Base64.encodeToString(bytes,Base64.DEFAULT);
+    private void uploadImage(String name, String password, String email) {
 
+        StorageReference reference = storageReference.child("userImage/" + imageUrl + "-" + System.currentTimeMillis() + ".pdf");
+
+        UploadTask urlTask = reference.putFile(imageUrl);
+        Task<Uri> task = urlTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
+            @Override
+            public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
+                if (!task.isSuccessful()) {
+                    progressDialog.dismiss();
+                    throw Objects.requireNonNull(task.getException());
+                }
+                return reference.getDownloadUrl();
+            }
+        }).addOnCompleteListener(new OnCompleteListener<Uri>() {
+            @Override
+            public void onComplete(@NonNull Task<Uri> task) {
+                if (task.isSuccessful()) {
+
+                    Uri downloadUrl = task.getResult();
+                    if (downloadUrl != null) {
+                        storeToFirestore(name, password, email, String.valueOf(downloadUrl));
+                    }
+                }
+            }
+        });
+
+
+//    private String encodedImage(Bitmap bitmap){
+//        int previewWidth=150;
+//        int previewHeight=bitmap.getHeight()+previewWidth/bitmap.getWidth();
+//        Bitmap previewBitmap=Bitmap.createScaledBitmap(bitmap,previewWidth,previewHeight,false);
+//        ByteArrayOutputStream byteArrayOutputStream=new ByteArrayOutputStream();
+//        previewBitmap.compress(Bitmap.CompressFormat.JPEG,50,byteArrayOutputStream);
+//        byte[] bytes=byteArrayOutputStream.toByteArray();
+//        return Base64.encodeToString(bytes,Base64.DEFAULT);
+//
+//    }
     }
+
+//    private void uploadImage(String uploadImg) {
+//        HashMap<String, String> registerValue = new HashMap<>();
+//        registerValue.put(Constant.KEY_PROFILE_IMAGE, uploadImg);
+//        database.collection(Constant.KEY_COLLECTION_ADMIN).document(Constant.KEY_DOCUMENT_USER).collection("userInfo").document(binding.nameField.getText().toString()).set(registerValue).addOnSuccessListener(new OnSuccessListener<Void>() {
+//            @Override
+//            public void onSuccess(Void unused) {
+//
+//            }
+//        }).addOnFailureListener(new OnFailureListener() {
+//            @Override
+//            public void onFailure(@NonNull Exception e) {
+//                progressDialog.dismiss();
+//                showToast("Register Failed " + e.getMessage());
+//            }
+//        });
+//    }
+
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == requestCodeValue && resultCode == RESULT_OK) {
             assert data != null;
-            Uri uri = data.getData();
-            try {
-                bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), uri);
+            imageUrl = data.getData();
 
+            try {
+                bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), imageUrl);
 
 
             } catch (IOException e) {
@@ -162,11 +235,11 @@ public class RegisterActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
             if (bitmap != null) {
-                encodeImage=encodedImage(bitmap);
+//                encodeImage=encodedImage(bitmap);
                 binding.addImageTv.setVisibility(View.GONE);
                 binding.profileImage.setImageBitmap(bitmap);
             } else {
-               showToast("Error");
+                showToast("Error");
             }
 
 
