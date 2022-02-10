@@ -240,10 +240,9 @@
                    android:layout_height="wrap_content"
                    android:layout_marginBottom="@dimen/_30sdp"
                    app:layout_constraintBottom_toBottomOf="parent"
-                   android:text="Faculty"
+                   android:text="Group"
                    android:fontFamily="@font/rubik_regular"
                    android:textSize="@dimen/_12ssp"
-
                    android:textAlignment="center"
                    android:textColor="@color/white"
                    />
