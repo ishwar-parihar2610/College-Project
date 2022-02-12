@@ -5,6 +5,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -33,6 +34,12 @@ public class MainActivity extends AppCompatActivity {
         });
         binding.uploadEBookCard.setOnClickListener(v->{
             startActivity(new Intent(MainActivity.this,UploadPdfActivity.class));
+        });
+        binding.uploadFacilityCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,ActivityGroup.class));
+            }
         });
     }
 

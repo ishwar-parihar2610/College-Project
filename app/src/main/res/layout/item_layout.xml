@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10ssp"
+    android:padding="@dimen/_10ssp"
+    android:background="@drawable/background_item">
+
+    <io.github.florent37.shapeofview.ShapeOfView
+        android:id="@+id/profileImageShape"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="@dimen/_50sdp"
+
+        android:layout_height="@dimen/_50sdp">
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </io.github.florent37.shapeofview.ShapeOfView>
+
+    <TextView
+        android:id="@+id/userName"
+        app:layout_constraintStart_toEndOf="@id/profileImageShape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:textSize="@dimen/_18ssp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/profileImageShape"
+        app:layout_constraintBottom_toTopOf="@id/subject"/>
+
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Faculty"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/userName"
+        app:layout_constraintTop_toBottomOf="@id/userName"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="@id/profileImageShape"
+        android:textSize="@dimen/_14ssp"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:2:1-45:12
+ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:2:1-48:12
 MERGED from [androidx.databinding:databinding-adapters:7.1.0] C:\Users\User\.gradle\caches\transforms-3\4f755ab93fbfdf0aaf6eec5fc9de5dff\transformed\databinding-adapters-7.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:7.1.0] C:\Users\User\.gradle\caches\transforms-3\2621a6d0f34864a6b0af7c5c3e15f0b1\transformed\databinding-runtime-7.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\User\.gradle\caches\transforms-3\75af2f9f7a2a57b108cec86715805589\transformed\material-1.5.0\AndroidManifest.xml:17:1-24:12
@@ -19,6 +19,7 @@ MERGED from [com.google.firebase:firebase-database:20.0.3] C:\Users\User\.gradle
 MERGED from [com.makeramen:roundedimageview:2.3.0] C:\Users\User\.gradle\caches\transforms-3\fcdbd50d1d2744308218a6fd49b0ba39\transformed\jetified-roundedimageview-2.3.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\User\.gradle\caches\transforms-3\c9c8661a756956e3cf1d9aa4802449db\transformed\multidex-2.0.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\User\.gradle\caches\transforms-3\9d90ff90d24a8006ca92f669f229abad\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:17:1-83:12
+MERGED from [com.github.bumptech.glide:glide:4.13.0] C:\Users\User\.gradle\caches\transforms-3\2604ca628bfe8d04f9b565ada48e442f\transformed\jetified-glide-4.13.0\AndroidManifest.xml:2:1-12:12
 MERGED from [com.google.android.gms:play-services-measurement-api:20.0.2] C:\Users\User\.gradle\caches\transforms-3\30871273d16811b89beb4d2949f04df7\transformed\jetified-play-services-measurement-api-20.0.2\AndroidManifest.xml:17:1-36:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\User\.gradle\caches\transforms-3\f62c3776be4622602d7faf28058d8412\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta04] C:\Users\User\.gradle\caches\transforms-3\d3b14114c245c81f7ef79b6366f8c8b7\transformed\jetified-firebase-appcheck-interop-16.0.0-beta04\AndroidManifest.xml:15:1-26:12
@@ -73,32 +74,34 @@ MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\User\.gradle\caches\
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\User\.gradle\caches\transforms-3\9013fc35669700697828115f9c08b294\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\User\.gradle\caches\transforms-3\801a4b10f4930c6584a06c2aa3fc6824\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\User\.gradle\caches\transforms-3\97fc40bdda51f08425ab9cc00ef2f7f9\transformed\jetified-firebase-components-17.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.13.0] C:\Users\User\.gradle\caches\transforms-3\8b52b307babcc47b2edec52c305ac6bf\transformed\jetified-gifdecoder-4.13.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\User\.gradle\caches\transforms-3\7c5da5bf164ea04587eacab6ec6ac6c3\transformed\exifinterface-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\User\.gradle\caches\transforms-3\c490193613955f33e855877eccd93758\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\User\.gradle\caches\transforms-3\5e544ef4024a28f39e0c85ede9f2947f\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\User\.gradle\caches\transforms-3\315dcae8cf6e63d0ae9d8687fc683b75\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\User\.gradle\caches\transforms-3\7419fd4b3d482c2ca41a4283c0f7a125\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\User\.gradle\caches\transforms-3\f48dcc92da5c437cb54ee621d75fbdb3\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\User\.gradle\caches\transforms-3\26aa700013cc6b7ead00505c7b3f3bd6\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\User\.gradle\caches\transforms-3\c490193613955f33e855877eccd93758\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:17:1-33:12
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\User\.gradle\caches\transforms-3\5e544ef4024a28f39e0c85ede9f2947f\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\User\.gradle\caches\transforms-3\3fb0d05acfa656b5175f7fc4f4c35378\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\User\.gradle\caches\transforms-3\ee2a06abf7072f6d32b4ba1ddebf3ee9\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\User\.gradle\caches\transforms-3\a012dd403fa04a0855573e3f2df0bab9\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\User\.gradle\caches\transforms-3\9b87ee19fcc71c0888487a660f7d463c\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\User\.gradle\caches\transforms-3\4e1035e0885664e2adae02cca98bfb66\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.41.0] C:\Users\User\.gradle\caches\transforms-3\f09a547e136dc392bac0a757acd2f8b5\transformed\jetified-grpc-android-1.41.0\AndroidManifest.xml:2:1-13:12
-INJECTED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:2:1-48:12
 	package
 		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:3:5-31
 		INJECTED from F:\college Project\Lips\app\src\main\AndroidManifest.xml
 		INJECTED from F:\college Project\Lips\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from F:\college Project\Lips\app\src\main\AndroidManifest.xml
-		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:2:1-45:12
+		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:2:1-48:12
 		INJECTED from F:\college Project\Lips\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from F:\college Project\Lips\app\src\main\AndroidManifest.xml
-		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:2:1-45:12
+		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:2:1-48:12
 		INJECTED from F:\college Project\Lips\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:2:11-69
@@ -129,7 +132,7 @@ ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:6:5-80
 	android:name
 		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:6:22-77
 application
-ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:8:5-43:19
+ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:8:5-46:19
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\User\.gradle\caches\transforms-3\75af2f9f7a2a57b108cec86715805589\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\User\.gradle\caches\transforms-3\75af2f9f7a2a57b108cec86715805589\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\User\.gradle\caches\transforms-3\551021e76190294bfa9c35df8ea2ae7d\transformed\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
@@ -144,6 +147,8 @@ MERGED from [com.google.firebase:firebase-database:20.0.3] C:\Users\User\.gradle
 MERGED from [com.google.firebase:firebase-database:20.0.3] C:\Users\User\.gradle\caches\transforms-3\0e05e9abff622ba4f8fa6f79962a025a\transformed\jetified-firebase-database-20.0.3\AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\User\.gradle\caches\transforms-3\9d90ff90d24a8006ca92f669f229abad\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:26:5-81:19
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\User\.gradle\caches\transforms-3\9d90ff90d24a8006ca92f669f229abad\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:26:5-81:19
+MERGED from [com.github.bumptech.glide:glide:4.13.0] C:\Users\User\.gradle\caches\transforms-3\2604ca628bfe8d04f9b565ada48e442f\transformed\jetified-glide-4.13.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.13.0] C:\Users\User\.gradle\caches\transforms-3\2604ca628bfe8d04f9b565ada48e442f\transformed\jetified-glide-4.13.0\AndroidManifest.xml:10:5-20
 MERGED from [com.google.android.gms:play-services-measurement-api:20.0.2] C:\Users\User\.gradle\caches\transforms-3\30871273d16811b89beb4d2949f04df7\transformed\jetified-play-services-measurement-api-20.0.2\AndroidManifest.xml:26:5-34:19
 MERGED from [com.google.android.gms:play-services-measurement-api:20.0.2] C:\Users\User\.gradle\caches\transforms-3\30871273d16811b89beb4d2949f04df7\transformed\jetified-play-services-measurement-api-20.0.2\AndroidManifest.xml:26:5-34:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\User\.gradle\caches\transforms-3\f62c3776be4622602d7faf28058d8412\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
@@ -184,6 +189,8 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Us
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\User\.gradle\caches\transforms-3\0bef9ea8b1348d4ba89be6cc6d431849\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\User\.gradle\caches\transforms-3\b72e368684e3247f8b44a39207549c12\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\User\.gradle\caches\transforms-3\b72e368684e3247f8b44a39207549c12\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:25:5-35:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.13.0] C:\Users\User\.gradle\caches\transforms-3\8b52b307babcc47b2edec52c305ac6bf\transformed\jetified-gifdecoder-4.13.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.13.0] C:\Users\User\.gradle\caches\transforms-3\8b52b307babcc47b2edec52c305ac6bf\transformed\jetified-gifdecoder-4.13.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\User\.gradle\caches\transforms-3\c490193613955f33e855877eccd93758\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\User\.gradle\caches\transforms-3\c490193613955f33e855877eccd93758\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
 	android:appComponentFactory
@@ -200,60 +207,66 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\User\.gradle\cache
 		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
 		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:14:9-42
-activity#com.android.lips.UploadPdfActivity
+activity#com.android.lips.ActivityGroup
 ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:15:9-17:40
 	android:exported
 		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:17:13-37
 	android:name
-		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:16:13-46
-activity#com.android.lips.ActivityUploadImage
+		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:16:13-42
+activity#com.android.lips.UploadPdfActivity
 ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:18:9-20:40
 	android:exported
 		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:20:13-37
 	android:name
-		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:19:13-48
-activity#com.android.lips.ActivityUploadNotice
-ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:21:9-24:58
-	android:windowSoftInputMode
-		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:24:13-55
+		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:19:13-46
+activity#com.android.lips.ActivityUploadImage
+ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:21:9-23:40
 	android:exported
 		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:23:13-37
 	android:name
-		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:22:13-49
+		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:22:13-48
+activity#com.android.lips.ActivityUploadNotice
+ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:24:9-27:58
+	android:windowSoftInputMode
+		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:27:13-55
+	android:exported
+		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:25:13-49
 activity#com.android.lips.RegisterActivity
-ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:25:9-28:58
+ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:28:9-31:58
 	android:windowSoftInputMode
-		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:28:13-55
+		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:31:13-55
 	android:exported
-		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:27:13-37
+		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:26:13-45
+		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:29:13-45
 activity#com.android.lips.SplashActivity
-ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:29:9-38:20
+ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:32:9-41:20
 	android:windowSoftInputMode
-		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:32:13-55
+		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:35:13-55
 	android:exported
-		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:31:13-36
+		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:34:13-36
 	android:name
-		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:30:13-43
+		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:33:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:33:13-37:29
+ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:36:13-40:29
 action#android.intent.action.MAIN
-ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:34:17-69
+ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:37:17-69
 	android:name
-		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:34:25-66
+		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:37:25-66
 category#android.intent.category.LAUNCHER
-ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:36:17-77
+ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:39:17-77
 	android:name
-		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:36:27-74
+		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:39:27-74
 activity#com.android.lips.MainActivity
-ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:39:9-42:58
+ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:42:9-45:58
 	android:windowSoftInputMode
-		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:42:13-55
+		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:45:13-55
 	android:exported
-		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:41:13-36
+		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:44:13-36
 	android:name
-		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:40:13-41
+		ADDED from F:\college Project\Lips\app\src\main\AndroidManifest.xml:43:13-41
 uses-sdk
 INJECTED from F:\college Project\Lips\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\college Project\Lips\app\src\main\AndroidManifest.xml
@@ -288,6 +301,8 @@ MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\User\.gradle\caches\tran
 MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\User\.gradle\caches\transforms-3\c9c8661a756956e3cf1d9aa4802449db\transformed\multidex-2.0.1\AndroidManifest.xml:20:5-43
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\User\.gradle\caches\transforms-3\9d90ff90d24a8006ca92f669f229abad\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\User\.gradle\caches\transforms-3\9d90ff90d24a8006ca92f669f229abad\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:21:5-44
+MERGED from [com.github.bumptech.glide:glide:4.13.0] C:\Users\User\.gradle\caches\transforms-3\2604ca628bfe8d04f9b565ada48e442f\transformed\jetified-glide-4.13.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.13.0] C:\Users\User\.gradle\caches\transforms-3\2604ca628bfe8d04f9b565ada48e442f\transformed\jetified-glide-4.13.0\AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.android.gms:play-services-measurement-api:20.0.2] C:\Users\User\.gradle\caches\transforms-3\30871273d16811b89beb4d2949f04df7\transformed\jetified-play-services-measurement-api-20.0.2\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-api:20.0.2] C:\Users\User\.gradle\caches\transforms-3\30871273d16811b89beb4d2949f04df7\transformed\jetified-play-services-measurement-api-20.0.2\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\User\.gradle\caches\transforms-3\f62c3776be4622602d7faf28058d8412\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
@@ -396,6 +411,14 @@ MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\User\.gradle\caches\tran
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\User\.gradle\caches\transforms-3\801a4b10f4930c6584a06c2aa3fc6824\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\User\.gradle\caches\transforms-3\97fc40bdda51f08425ab9cc00ef2f7f9\transformed\jetified-firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\User\.gradle\caches\transforms-3\97fc40bdda51f08425ab9cc00ef2f7f9\transformed\jetified-firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.13.0] C:\Users\User\.gradle\caches\transforms-3\8b52b307babcc47b2edec52c305ac6bf\transformed\jetified-gifdecoder-4.13.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.13.0] C:\Users\User\.gradle\caches\transforms-3\8b52b307babcc47b2edec52c305ac6bf\transformed\jetified-gifdecoder-4.13.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\User\.gradle\caches\transforms-3\7c5da5bf164ea04587eacab6ec6ac6c3\transformed\exifinterface-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\User\.gradle\caches\transforms-3\7c5da5bf164ea04587eacab6ec6ac6c3\transformed\exifinterface-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\User\.gradle\caches\transforms-3\c490193613955f33e855877eccd93758\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\User\.gradle\caches\transforms-3\c490193613955f33e855877eccd93758\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\User\.gradle\caches\transforms-3\5e544ef4024a28f39e0c85ede9f2947f\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\User\.gradle\caches\transforms-3\5e544ef4024a28f39e0c85ede9f2947f\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\User\.gradle\caches\transforms-3\315dcae8cf6e63d0ae9d8687fc683b75\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\User\.gradle\caches\transforms-3\315dcae8cf6e63d0ae9d8687fc683b75\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\User\.gradle\caches\transforms-3\7419fd4b3d482c2ca41a4283c0f7a125\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
@@ -404,10 +427,6 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\User\.gr
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\User\.gradle\caches\transforms-3\f48dcc92da5c437cb54ee621d75fbdb3\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\User\.gradle\caches\transforms-3\26aa700013cc6b7ead00505c7b3f3bd6\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\User\.gradle\caches\transforms-3\26aa700013cc6b7ead00505c7b3f3bd6\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\User\.gradle\caches\transforms-3\c490193613955f33e855877eccd93758\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\User\.gradle\caches\transforms-3\c490193613955f33e855877eccd93758\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\User\.gradle\caches\transforms-3\5e544ef4024a28f39e0c85ede9f2947f\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\User\.gradle\caches\transforms-3\5e544ef4024a28f39e0c85ede9f2947f\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\User\.gradle\caches\transforms-3\3fb0d05acfa656b5175f7fc4f4c35378\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\User\.gradle\caches\transforms-3\3fb0d05acfa656b5175f7fc4f4c35378\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\User\.gradle\caches\transforms-3\ee2a06abf7072f6d32b4ba1ddebf3ee9\transformed\print-1.0.0\AndroidManifest.xml:20:5-44

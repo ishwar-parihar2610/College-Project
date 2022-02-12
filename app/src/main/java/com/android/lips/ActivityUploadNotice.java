@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -17,29 +18,46 @@ import android.widget.Toast;
 
 import com.android.lips.databinding.ActivityUploadNoticeBinding;
 import com.android.lips.utilities.Constant;
+import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCanceledListener;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.Objects;
 
 public class ActivityUploadNotice extends AppCompatActivity {
     ActivityUploadNoticeBinding binding;
     private int requestCodeValue = 1;
     private Bitmap bitmap;
     private FirebaseFirestore dataBase;
+    ProgressDialog progressDialog;
+    FirebaseFirestore firebaseFirestore;
+    StorageReference storageReference;
+    DatabaseReference databaseReference;
+    FirebaseDatabase firebaseDatabase;
+    String noticeName;
+    Uri imageData;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         dataBase = FirebaseFirestore.getInstance();
+        progressDialog = new ProgressDialog(this);
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        storageReference = FirebaseStorage.getInstance("gs://mycollegeapp-a3012.appspot.com/").getReference();
         binding = DataBindingUtil.setContentView(this, R.layout.activity_upload_notice);
         binding.uploadNoticeCard.setOnClickListener(v -> {
             openGallery();
@@ -50,7 +68,7 @@ public class ActivityUploadNotice extends AppCompatActivity {
                 binding.noticeTitleField.setError("Empty");
                 binding.noticeTitleField.requestFocus();
             } else {
-                storeDataToFireStore(binding.noticeTitleField.getText().toString());
+                uploadNoticeImage(binding.noticeTitleField.getText().toString());
 
 
             }
@@ -70,9 +88,9 @@ public class ActivityUploadNotice extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == requestCodeValue && resultCode == RESULT_OK) {
             assert data != null;
-            Uri uri = data.getData();
+            imageData = data.getData();
             try {
-                bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), uri);
+                bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), imageData);
 
             } catch (IOException e) {
                 binding.noticeUploadedImage.setVisibility(View.GONE);
@@ -90,22 +108,23 @@ public class ActivityUploadNotice extends AppCompatActivity {
         }
     }
 
-    void storeDataToFireStore(String noticeTitle) {
+    void storeDataToFireStore(String noticeTitle, String noticeUrl) {
 
         HashMap<String, String> noticeData = new HashMap();
         noticeData.put(Constant.KEY_NOTICE_TITLE, noticeTitle);
-        noticeData.put(Constant.KEY_NOTICE_IMAGE,encodedImage(bitmap));
+        noticeData.put(Constant.KEY_NOTICE_IMAGE, noticeUrl);
         dataBase.collection(Constant.KEY_COLLECTION_ADMIN).document(Constant.KEY_DOCUMENT_NOTICEBOARD).collection("Notice").document().set(noticeData).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void unused) {
                 showToast("Successfully Notice Added");
-                startActivity(new Intent(ActivityUploadNotice.this,MainActivity.class));
-
+                startActivity(new Intent(ActivityUploadNotice.this, MainActivity.class));
+                progressDialog.dismiss();
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
                 showToast("Failed : " + e.getMessage());
+                progressDialog.dismiss();
             }
         });
     }
@@ -136,14 +155,44 @@ public class ActivityUploadNotice extends AppCompatActivity {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
-    private String encodedImage(Bitmap bitmap){
-        int previewWidth=150;
-        int previewHeight=bitmap.getHeight()+previewWidth/bitmap.getWidth();
-        Bitmap previewBitmap=Bitmap.createScaledBitmap(bitmap,previewWidth,previewHeight,false);
-        ByteArrayOutputStream byteArrayOutputStream=new ByteArrayOutputStream();
-        previewBitmap.compress(Bitmap.CompressFormat.JPEG,50,byteArrayOutputStream);
-        byte[] bytes=byteArrayOutputStream.toByteArray();
-        return Base64.encodeToString(bytes,Base64.DEFAULT);
+    private String encodedImage(Bitmap bitmap) {
+        int previewWidth = 150;
+        int previewHeight = bitmap.getHeight() + previewWidth / bitmap.getWidth();
+        Bitmap previewBitmap = Bitmap.createScaledBitmap(bitmap, previewWidth, previewHeight, false);
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        previewBitmap.compress(Bitmap.CompressFormat.JPEG, 50, byteArrayOutputStream);
+        byte[] bytes = byteArrayOutputStream.toByteArray();
+        return Base64.encodeToString(bytes, Base64.DEFAULT);
 
+    }
+
+    private void uploadNoticeImage(String noticeTitle) {
+        progressDialog.setTitle("Please Wait....");
+        progressDialog.setMessage("Uploading Notice");
+        progressDialog.show();
+        StorageReference reference = storageReference.child("notice/" + noticeTitle + "-" + System.currentTimeMillis() + ".image");
+
+        UploadTask urlTask = reference.putFile(imageData);
+        Task<Uri> task = urlTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
+            @Override
+            public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
+                if (!task.isSuccessful()) {
+                    progressDialog.dismiss();
+                    throw Objects.requireNonNull(task.getException());
+                }
+                return reference.getDownloadUrl();
+            }
+        }).addOnCompleteListener(new OnCompleteListener<Uri>() {
+            @Override
+            public void onComplete(@NonNull Task<Uri> task) {
+                if (task.isSuccessful()) {
+
+                    Uri downloadUrl = task.getResult();
+                    if (downloadUrl != null) {
+                        storeDataToFireStore(noticeTitle, String.valueOf(downloadUrl));
+                    }
+                }
+            }
+        });
     }
 }

@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lips">
         <activity
+            android:name=".ActivityGroup"
+            android:exported="false" />
+        <activity
             android:name=".UploadPdfActivity"
             android:exported="false" />
         <activity

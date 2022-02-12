@@ -29,6 +29,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Lips" >
         <activity
+            android:name="com.android.lips.ActivityGroup"
+            android:exported="false" />
+        <activity
             android:name="com.android.lips.UploadPdfActivity"
             android:exported="false" />
         <activity

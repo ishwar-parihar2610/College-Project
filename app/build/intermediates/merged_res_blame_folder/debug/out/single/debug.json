@@ -16,6 +16,10 @@
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_student.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\fragment_student.xml"
+    },
+    {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
@@ -58,6 +62,10 @@
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\font_rubik_light.ttf.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\font\\rubik_light.ttf"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_group.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_group.xml"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_lucky.png.flat",
@@ -170,6 +178,10 @@
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_lucky.png.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xxhdpi\\lucky.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_faculty.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\fragment_faculty.xml"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.png.flat",

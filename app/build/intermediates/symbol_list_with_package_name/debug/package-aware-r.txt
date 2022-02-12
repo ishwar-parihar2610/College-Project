@@ -3579,6 +3579,7 @@ id give_us_a_review_landmine_button
 id give_us_a_review_landmine_main_layout
 id give_us_a_review_landmine_text_1
 id give_us_a_review_landmine_text_2
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -3813,6 +3814,7 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
+id tabLayout
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3882,6 +3884,7 @@ id uploadNoticeCard
 id uploadText
 id useLogo
 id vertical_only
+id viewPager
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -3985,6 +3988,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_group
 layout activity_main
 layout activity_register
 layout activity_splash
@@ -4010,6 +4014,8 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dp_example
+layout fragment_faculty
+layout fragment_student
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -4164,6 +4170,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description

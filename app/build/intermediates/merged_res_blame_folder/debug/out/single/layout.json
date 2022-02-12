@@ -16,8 +16,20 @@
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_splash.xml"
     },
     {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_student.xml",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\fragment_student.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_faculty.xml",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\fragment_faculty.xml"
+    },
+    {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_upload_notice.xml",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_upload_notice.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_group.xml",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_group.xml"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_upload_image.xml",
