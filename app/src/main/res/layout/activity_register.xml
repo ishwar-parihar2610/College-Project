@@ -40,6 +40,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintTop_toBottomOf="@id/appBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingBottom="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_20sdp">
 
 
@@ -49,6 +51,7 @@
         android:layout_height="wrap_content"
         android:visibility="visible"
         app:layout_constraintTop_toTopOf="parent"
+
       >
 
         <FrameLayout
@@ -113,12 +116,46 @@
             android:background="@drawable/background"/>
 
         <EditText
+            android:inputType="text"
+            android:id="@+id/departmentField"
+            android:layout_width="0dp"
+            android:textSize="@dimen/_12ssp"
+            android:layout_height="@dimen/_50sdp"
+            app:layout_constraintTop_toBottomOf="@id/emailField"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="@id/emailField"
+            app:layout_constraintEnd_toEndOf="@id/emailField"
+            android:hint="Department"
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/rubik_regular"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/background"/>
+
+        <EditText
+            android:inputType="text"
+            android:id="@+id/subjectField"
+            android:layout_width="0dp"
+            android:textSize="@dimen/_12ssp"
+            android:layout_height="@dimen/_50sdp"
+            app:layout_constraintTop_toBottomOf="@id/departmentField"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="@id/emailField"
+            app:layout_constraintEnd_toEndOf="@id/emailField"
+            android:hint="Subject"
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/rubik_regular"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/background"/>
+
+        <EditText
             android:inputType="textPassword"
             android:id="@+id/passwordField"
             android:layout_width="0dp"
             android:textSize="@dimen/_12ssp"
             android:layout_height="@dimen/_50sdp"
-            app:layout_constraintTop_toBottomOf="@id/emailField"
+            app:layout_constraintTop_toBottomOf="@id/subjectField"
             android:layout_marginTop="@dimen/_20sdp"
             app:layout_constraintStart_toStartOf="@id/emailField"
             app:layout_constraintEnd_toEndOf="@id/emailField"
@@ -139,7 +176,7 @@
             android:layout_marginTop="@dimen/_20sdp"
             app:layout_constraintStart_toStartOf="@id/emailField"
             app:layout_constraintEnd_toEndOf="@id/emailField"
-            android:hint="Password"
+            android:hint="confirm Password"
             android:textColorHint="@color/white"
             android:fontFamily="@font/rubik_regular"
             android:paddingLeft="@dimen/_10sdp"
@@ -162,6 +199,7 @@
             android:layout_marginTop="@dimen/_30sdp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

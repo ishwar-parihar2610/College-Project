@@ -15,6 +15,8 @@ public class Constant {
         public static final String KEY_E_BOOK_DOCUMENT="e-book";
         public static final String KEY_BOOK_PDF_COLLECTION="book_pdf";
         public static final String KEY_BOOK_TITLE="bookTitle";
+        public static final String KEY_DEPARTMENT="department";
+        public static final String KEY_SUBJECT="subject";
 
 
 

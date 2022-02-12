@@ -87,7 +87,7 @@ public class RegisterActivity extends AppCompatActivity {
                     preferenceManager.putString(Constant.KEY_USER_ID, _auth.getUid());
 
                     FirebaseUser user = _auth.getCurrentUser();
-                    uploadImage(email, password, name);
+                    uploadImage(email, password, name,binding.departmentField.getText().toString(),binding.subjectField.getText().toString());
 
 
                 }
@@ -100,7 +100,7 @@ public class RegisterActivity extends AppCompatActivity {
         });
     }
 
-    private void storeToFirestore(String email, String password, String name, String imgUrl) {
+    private void storeToFirestore(String email, String password, String name, String imgUrl,String subject,String department) {
 
         progressDialog.setTitle("Please Wait....");
         progressDialog.setMessage("Registration");
@@ -109,8 +109,10 @@ public class RegisterActivity extends AppCompatActivity {
         HashMap<String, String> registerValue = new HashMap<>();
         registerValue.put(Constant.KEY_EMAIL, email);
         registerValue.put(Constant.KEY_PASSWORD, password);
-        registerValue.put(Constant.KEY_NAME, name);
+        registerValue.put(Constant.KEY_NAME, "Name :"+ name);
         registerValue.put(Constant.KEY_PROFILE_IMAGE, imgUrl);
+        registerValue.put(Constant.KEY_DEPARTMENT,"Department :"+ department);
+        registerValue.put(Constant.KEY_SUBJECT, "Subject :"+ subject);
 
 
         database.collection(Constant.KEY_COLLECTION_ADMIN).document(Constant.KEY_DOCUMENT_USER).collection("userInfo").document(binding.nameField.getText().toString()).set(registerValue).addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -153,14 +155,21 @@ public class RegisterActivity extends AppCompatActivity {
         } else if (!binding.passwordField.getText().toString().equals(binding.confirmPasswordField.getText().toString())) {
             showToast("Password & Confirm Password must be same");
             return false;
-        } else {
+        } else if(binding.passwordField.getText().toString().length()<6){
+            showToast("Password Must be Greater than 6");
+        } else if(binding.departmentField.getText().toString().isEmpty()){
+            showToast("Enter Department ");
+        }
+        else if(binding.subjectField.getText().toString().isEmpty()){
+            showToast("Enter Subject ");
+        }else {
             return true;
         }
         return true;
 
     }
 
-    private void uploadImage(String name, String password, String email) {
+    private void uploadImage(String email, String password, String name,String department,String subject) {
 
         StorageReference reference = storageReference.child("userImage/" + imageUrl + "-" + System.currentTimeMillis() + ".pdf");
 
@@ -181,7 +190,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                     Uri downloadUrl = task.getResult();
                     if (downloadUrl != null) {
-                        storeToFirestore(name, password, email, String.valueOf(downloadUrl));
+                        storeToFirestore(email, password, name, String.valueOf(downloadUrl),subject,department);
                     }
                 }
             }

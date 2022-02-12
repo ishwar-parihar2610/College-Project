@@ -22,8 +22,8 @@ public class ActivityGroup extends AppCompatActivity {
         fragmentAdapter=new FragmentAdapter(fragmentManager,getLifecycle());
         binding.viewPager.setAdapter(fragmentAdapter);
 
-        binding.tabLayout.addTab(binding.tabLayout.newTab().setText("Faculty"));
         binding.tabLayout.addTab(binding.tabLayout.newTab().setText("Student"));
+        binding.tabLayout.addTab(binding.tabLayout.newTab().setText("Faculty"));
         binding.tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {

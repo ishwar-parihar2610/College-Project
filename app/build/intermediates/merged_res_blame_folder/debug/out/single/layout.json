@@ -28,6 +28,10 @@
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_upload_notice.xml"
     },
     {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_layout.xml",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\item_layout.xml"
+    },
+    {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_group.xml",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_group.xml"
     },

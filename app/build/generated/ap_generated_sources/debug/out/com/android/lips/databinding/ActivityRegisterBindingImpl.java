@@ -21,9 +21,11 @@ public class ActivityRegisterBindingImpl extends ActivityRegisterBinding  {
         sViewsWithIds.put(R.id.addImageTv, 5);
         sViewsWithIds.put(R.id.nameField, 6);
         sViewsWithIds.put(R.id.emailField, 7);
-        sViewsWithIds.put(R.id.passwordField, 8);
-        sViewsWithIds.put(R.id.confirmPasswordField, 9);
-        sViewsWithIds.put(R.id.registerBtn, 10);
+        sViewsWithIds.put(R.id.departmentField, 8);
+        sViewsWithIds.put(R.id.subjectField, 9);
+        sViewsWithIds.put(R.id.passwordField, 10);
+        sViewsWithIds.put(R.id.confirmPasswordField, 11);
+        sViewsWithIds.put(R.id.registerBtn, 12);
     }
     // views
     @NonNull
@@ -34,20 +36,22 @@ public class ActivityRegisterBindingImpl extends ActivityRegisterBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityRegisterBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 11, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 13, sIncludes, sViewsWithIds));
     }
     private ActivityRegisterBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
             , (android.widget.TextView) bindings[5]
             , (com.google.android.material.appbar.AppBarLayout) bindings[1]
-            , (android.widget.EditText) bindings[9]
+            , (android.widget.EditText) bindings[11]
+            , (android.widget.EditText) bindings[8]
             , (android.widget.EditText) bindings[7]
             , (android.widget.FrameLayout) bindings[3]
             , (androidx.constraintlayout.widget.ConstraintLayout) bindings[2]
             , (android.widget.EditText) bindings[6]
-            , (android.widget.EditText) bindings[8]
+            , (android.widget.EditText) bindings[10]
             , (com.makeramen.roundedimageview.RoundedImageView) bindings[4]
-            , (com.google.android.material.button.MaterialButton) bindings[10]
+            , (com.google.android.material.button.MaterialButton) bindings[12]
+            , (android.widget.EditText) bindings[9]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);

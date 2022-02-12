@@ -12,7 +12,7 @@
         <entry key="..\:/college Project/Lips/app/src/main/res/drawable/image_background.xml" value="0.1" />
         <entry key="..\:/college Project/Lips/app/src/main/res/layout/activity_group.xml" value="0.1748046875" />
         <entry key="..\:/college Project/Lips/app/src/main/res/layout/activity_main.xml" value="0.1901886860897383" />
-        <entry key="..\:/college Project/Lips/app/src/main/res/layout/activity_register.xml" value="0.2264151024877837" />
+        <entry key="..\:/college Project/Lips/app/src/main/res/layout/activity_register.xml" value="0.25" />
         <entry key="..\:/college Project/Lips/app/src/main/res/layout/activity_splash.xml" value="0.1" />
         <entry key="..\:/college Project/Lips/app/src/main/res/layout/activity_upload_image.xml" value="0.11510416666666666" />
         <entry key="..\:/college Project/Lips/app/src/main/res/layout/activity_upload_notice.xml" value="0.16301887379120425" />
@@ -20,6 +20,7 @@
         <entry key="..\:/college Project/Lips/app/src/main/res/layout/fragment_faculty.xml" value="0.19924529018924966" />
         <entry key="..\:/college Project/Lips/app/src/main/res/layout/fragment_student.xml" value="0.271484375" />
         <entry key="..\:/college Project/Lips/app/src/main/res/layout/item_layout.xml" value="0.271484375" />
+        <entry key="..\:/college Project/Lips/app/src/main/res/layout/student_item_layout.xml" value="0.271484375" />
       </map>
     </option>
   </component>

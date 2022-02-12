@@ -92,6 +92,10 @@
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\font\\rubik_extrabolditalic.ttf"
     },
     {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_background_item.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\background_item.xml"
+    },
+    {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\font_rubik_regular.ttf.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\font\\rubik_regular.ttf"
     },
@@ -134,6 +138,10 @@
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_item_layout.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\item_layout.xml"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",

@@ -15,6 +15,7 @@ import com.android.lips.databinding.ActivityUploadNoticeBindingImpl;
 import com.android.lips.databinding.ActivityUploadPdfBindingImpl;
 import com.android.lips.databinding.FragmentFacultyBindingImpl;
 import com.android.lips.databinding.FragmentStudentBindingImpl;
+import com.android.lips.databinding.ItemLayoutBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
@@ -44,7 +45,9 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_FRAGMENTSTUDENT = 9;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(9);
+  private static final int LAYOUT_ITEMLAYOUT = 10;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(10);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.activity_group, LAYOUT_ACTIVITYGROUP);
@@ -56,6 +59,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.activity_upload_pdf, LAYOUT_ACTIVITYUPLOADPDF);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.fragment_faculty, LAYOUT_FRAGMENTFACULTY);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.fragment_student, LAYOUT_FRAGMENTSTUDENT);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.item_layout, LAYOUT_ITEMLAYOUT);
   }
 
   @Override
@@ -121,6 +125,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for fragment_student is invalid. Received: " + tag);
         }
+        case  LAYOUT_ITEMLAYOUT: {
+          if ("layout/item_layout_0".equals(tag)) {
+            return new ItemLayoutBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for item_layout is invalid. Received: " + tag);
+        }
       }
     }
     return null;
@@ -174,7 +184,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(9);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(10);
 
     static {
       sKeys.put("layout/activity_group_0", com.android.lips.R.layout.activity_group);
@@ -186,6 +196,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put("layout/activity_upload_pdf_0", com.android.lips.R.layout.activity_upload_pdf);
       sKeys.put("layout/fragment_faculty_0", com.android.lips.R.layout.fragment_faculty);
       sKeys.put("layout/fragment_student_0", com.android.lips.R.layout.fragment_student);
+      sKeys.put("layout/item_layout_0", com.android.lips.R.layout.item_layout);
     }
   }
 }

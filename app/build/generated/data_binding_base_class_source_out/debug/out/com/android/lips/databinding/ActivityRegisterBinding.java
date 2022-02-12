@@ -30,6 +30,9 @@ public abstract class ActivityRegisterBinding extends ViewDataBinding {
   public final EditText confirmPasswordField;
 
   @NonNull
+  public final EditText departmentField;
+
+  @NonNull
   public final EditText emailField;
 
   @NonNull
@@ -50,14 +53,19 @@ public abstract class ActivityRegisterBinding extends ViewDataBinding {
   @NonNull
   public final MaterialButton registerBtn;
 
+  @NonNull
+  public final EditText subjectField;
+
   protected ActivityRegisterBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      TextView addImageTv, AppBarLayout appBar, EditText confirmPasswordField, EditText emailField,
-      FrameLayout layoutImage, ConstraintLayout loginForm, EditText nameField,
-      EditText passwordField, RoundedImageView profileImage, MaterialButton registerBtn) {
+      TextView addImageTv, AppBarLayout appBar, EditText confirmPasswordField,
+      EditText departmentField, EditText emailField, FrameLayout layoutImage,
+      ConstraintLayout loginForm, EditText nameField, EditText passwordField,
+      RoundedImageView profileImage, MaterialButton registerBtn, EditText subjectField) {
     super(_bindingComponent, _root, _localFieldCount);
     this.addImageTv = addImageTv;
     this.appBar = appBar;
     this.confirmPasswordField = confirmPasswordField;
+    this.departmentField = departmentField;
     this.emailField = emailField;
     this.layoutImage = layoutImage;
     this.loginForm = loginForm;
@@ -65,6 +73,7 @@ public abstract class ActivityRegisterBinding extends ViewDataBinding {
     this.passwordField = passwordField;
     this.profileImage = profileImage;
     this.registerBtn = registerBtn;
+    this.subjectField = subjectField;
   }
 
   @NonNull

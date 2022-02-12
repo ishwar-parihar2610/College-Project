@@ -8,6 +8,7 @@ MERGED from [androidx.databinding:databinding-adapters:7.1.0] C:\Users\User\.gra
 MERGED from [androidx.databinding:databinding-runtime:7.1.0] C:\Users\User\.gradle\caches\transforms-3\2621a6d0f34864a6b0af7c5c3e15f0b1\transformed\databinding-runtime-7.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\User\.gradle\caches\transforms-3\75af2f9f7a2a57b108cec86715805589\transformed\material-1.5.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\User\.gradle\caches\transforms-3\551021e76190294bfa9c35df8ea2ae7d\transformed\constraintlayout-2.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [io.github.florent37:shapeofview:1.4.7] C:\Users\User\.gradle\caches\transforms-3\22c9e22bcf1161ec0e612bf5aa4eafd5\transformed\jetified-shapeofview-1.4.7\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\User\.gradle\caches\transforms-3\5a0332805cf9a9f5a817d6073f1d8545\transformed\appcompat-1.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\User\.gradle\caches\transforms-3\4f35ac4abe442ba47dc0a2d22228ec4a\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-analytics:20.0.2] C:\Users\User\.gradle\caches\transforms-3\4e63cbd68b051b5b0f918d46eda53089\transformed\jetified-firebase-analytics-20.0.2\AndroidManifest.xml:2:1-9:12
@@ -279,6 +280,8 @@ MERGED from [com.google.android.material:material:1.5.0] C:\Users\User\.gradle\c
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\User\.gradle\caches\transforms-3\75af2f9f7a2a57b108cec86715805589\transformed\material-1.5.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\User\.gradle\caches\transforms-3\551021e76190294bfa9c35df8ea2ae7d\transformed\constraintlayout-2.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\User\.gradle\caches\transforms-3\551021e76190294bfa9c35df8ea2ae7d\transformed\constraintlayout-2.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [io.github.florent37:shapeofview:1.4.7] C:\Users\User\.gradle\caches\transforms-3\22c9e22bcf1161ec0e612bf5aa4eafd5\transformed\jetified-shapeofview-1.4.7\AndroidManifest.xml:7:5-9:41
+MERGED from [io.github.florent37:shapeofview:1.4.7] C:\Users\User\.gradle\caches\transforms-3\22c9e22bcf1161ec0e612bf5aa4eafd5\transformed\jetified-shapeofview-1.4.7\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\User\.gradle\caches\transforms-3\5a0332805cf9a9f5a817d6073f1d8545\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\User\.gradle\caches\transforms-3\5a0332805cf9a9f5a817d6073f1d8545\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\User\.gradle\caches\transforms-3\4f35ac4abe442ba47dc0a2d22228ec4a\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
