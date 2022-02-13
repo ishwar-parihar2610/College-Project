@@ -29,6 +29,21 @@
         android:testOnly="true"
         android:theme="@style/Theme.Lips" >
         <activity
+            android:name="com.android.lips.PdfViewActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.android.lips.adapter.PdfAdapter"
+            android:exported="false" />
+        <activity
+            android:name="com.android.lips.ActivityEbook"
+            android:exported="false" />
+        <activity
+            android:name="com.android.lips.AllImageActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.android.lips.AllNoticeActivity"
+            android:exported="false" />
+        <activity
             android:name="com.android.lips.ActivityGroup"
             android:exported="false" />
         <activity

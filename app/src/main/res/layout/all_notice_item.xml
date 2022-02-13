@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/notice_background"
+    android:paddingBottom="@dimen/_20sdp"
+    android:layout_margin="@dimen/_5sdp">
+
+    <TextView
+        android:id="@+id/noticeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notice"
+        android:textColor="@color/white"
+        android:fontFamily="@font/rubik_regular"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <io.github.florent37.shapeofview.shapes.CutCornerView
+        app:layout_constraintTop_toBottomOf="@id/noticeTitle"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_3sdp"
+        android:layout_height="@dimen/_250sdp">
+
+        <ImageView
+            android:id="@+id/noticeImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+
+
+            />
+    </io.github.florent37.shapeofview.shapes.CutCornerView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,5 +1,9 @@
 [
     {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_ebook.xml",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_ebook.xml"
+    },
+    {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_upload_pdf.xml",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_upload_pdf.xml"
     },
@@ -10,6 +14,30 @@
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_upload_notice.xml",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_upload_notice.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_all_image.xml",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_all_image.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_all_notice.xml",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_all_notice.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_layout.xml",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\item_layout.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_pdf_view.xml",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_pdf_view.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\all_pdf_list_item.xml",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\all_pdf_list_item.xml"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash.xml",
@@ -24,12 +52,8 @@
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\fragment_faculty.xml"
     },
     {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_upload_notice.xml",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_upload_notice.xml"
-    },
-    {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_layout.xml",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\item_layout.xml"
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\all_notice_item.xml",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\all_notice_item.xml"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_group.xml",

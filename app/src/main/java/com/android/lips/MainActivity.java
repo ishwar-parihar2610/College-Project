@@ -21,10 +21,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding= DataBindingUtil.setContentView(this,R.layout.activity_main);
         binding.uploadNoticeCard.setOnClickListener(v->{
-            startActivity(new Intent(MainActivity.this,ActivityUploadNotice.class));
+            startActivity(new Intent(MainActivity.this,AllNoticeActivity.class));
         });
         binding.uploadImageCard.setOnClickListener(v->{
-            startActivity(new Intent(MainActivity.this,ActivityUploadImage.class));
+            startActivity(new Intent(MainActivity.this,AllImageActivity.class));
         });
 
         binding.logoutCard.setOnClickListener(v->{
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this,SplashActivity.class));
         });
         binding.uploadEBookCard.setOnClickListener(v->{
-            startActivity(new Intent(MainActivity.this,UploadPdfActivity.class));
+            startActivity(new Intent(MainActivity.this,ActivityEbook.class));
         });
         binding.uploadFacilityCard.setOnClickListener(new View.OnClickListener() {
             @Override

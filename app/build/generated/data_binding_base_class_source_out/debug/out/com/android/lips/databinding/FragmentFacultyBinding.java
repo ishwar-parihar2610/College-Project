@@ -4,17 +4,28 @@ package com.android.lips.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
+import androidx.recyclerview.widget.RecyclerView;
 import com.android.lips.R;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class FragmentFacultyBinding extends ViewDataBinding {
-  protected FragmentFacultyBinding(Object _bindingComponent, View _root, int _localFieldCount) {
+  @NonNull
+  public final ProgressBar progressBar;
+
+  @NonNull
+  public final RecyclerView recycleView;
+
+  protected FragmentFacultyBinding(Object _bindingComponent, View _root, int _localFieldCount,
+      ProgressBar progressBar, RecyclerView recycleView) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.progressBar = progressBar;
+    this.recycleView = recycleView;
   }
 
   @NonNull
