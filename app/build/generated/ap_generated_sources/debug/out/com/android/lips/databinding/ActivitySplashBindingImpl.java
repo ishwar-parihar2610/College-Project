@@ -16,10 +16,8 @@ public class ActivitySplashBindingImpl extends ActivitySplashBinding  {
         sViewsWithIds = new android.util.SparseIntArray();
         sViewsWithIds.put(R.id.luckyLogo, 1);
         sViewsWithIds.put(R.id.loginForm, 2);
-        sViewsWithIds.put(R.id.emailField, 3);
-        sViewsWithIds.put(R.id.passwordField, 4);
-        sViewsWithIds.put(R.id.loginBtn, 5);
-        sViewsWithIds.put(R.id.registerBtn, 6);
+        sViewsWithIds.put(R.id.fclBtn, 3);
+        sViewsWithIds.put(R.id.studentBtn, 4);
     }
     // views
     @NonNull
@@ -30,16 +28,14 @@ public class ActivitySplashBindingImpl extends ActivitySplashBinding  {
     // Inverse Binding Event Handlers
 
     public ActivitySplashBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 7, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 5, sIncludes, sViewsWithIds));
     }
     private ActivitySplashBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.EditText) bindings[3]
-            , (com.google.android.material.button.MaterialButton) bindings[5]
+            , (com.google.android.material.button.MaterialButton) bindings[3]
             , (androidx.constraintlayout.widget.ConstraintLayout) bindings[2]
             , (android.widget.ImageView) bindings[1]
-            , (android.widget.EditText) bindings[4]
-            , (com.google.android.material.button.MaterialButton) bindings[6]
+            , (com.google.android.material.button.MaterialButton) bindings[4]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);

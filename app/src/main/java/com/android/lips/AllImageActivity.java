@@ -43,6 +43,9 @@ public class AllImageActivity extends AppCompatActivity {
        binding.addBtn.setOnClickListener(v->{
            startActivity(new Intent(AllImageActivity.this,ActivityUploadImage.class));
        });
+        binding.back.setOnClickListener(v->{
+            finish();
+        });
     }
 
     void readData(){
@@ -56,7 +59,7 @@ public class AllImageActivity extends AppCompatActivity {
                         ImageModel imageModel = new ImageModel();
                         imageModel.setImageTitle(queryDocumentSnapshot.getString("occasion"));
                         imageModel.setImage(queryDocumentSnapshot.getString(Constant.KEY_IMAGE));
-
+                        imageModel.setDate(queryDocumentSnapshot.getString(Constant.KEY_DATE));
                         imageModelArrayList.add(imageModel);
                     }
                 }

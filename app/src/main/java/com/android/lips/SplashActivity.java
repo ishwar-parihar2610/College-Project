@@ -40,10 +40,13 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         PreferenceManager preferenceManager=new PreferenceManager(this);
-        if(preferenceManager.getString(Constant.KEY_USER_ID)!=null){
-            Log.d("user id  is ", "onStart: "+preferenceManager.getString(Constant.KEY_USER_ID));
-            startActivity(new Intent(SplashActivity.this,MainActivity.class));
+        if(preferenceManager.getString(Constant.KEY_USER_ID)!=null) {
+            Log.d("user id  is ", "onStart: " + preferenceManager.getString(Constant.KEY_USER_ID));
+            startActivity(new Intent(SplashActivity.this, MainActivity.class));
+        }else if(preferenceManager.getBoolean(Constant.KEY_IS_SIGNED_IN)){
+            startActivity(new Intent(SplashActivity.this,StudentMainActivity.class));
         }
+
         super.onStart();
     }
 
@@ -62,15 +65,13 @@ public class SplashActivity extends AppCompatActivity {
             }
         }, 0);
 
-        binding.loginBtn.setOnClickListener(v -> {
-            if (isValidSignInDetails()) {
-                signIn(binding.emailField.getText().toString(), binding.passwordField.getText().toString());
-            }
+        binding.fclBtn.setOnClickListener(v -> {
+            startActivity(new Intent(SplashActivity.this,AdminRegisterActivity.class));
 
         });
 
-        binding.registerBtn.setOnClickListener(v -> {
-            startActivity(new Intent(SplashActivity.this, RegisterActivity.class));
+        binding.studentBtn.setOnClickListener(v -> {
+            startActivity(new Intent(SplashActivity.this, StudentLoginActivity.class));
 
 
         });
@@ -88,24 +89,24 @@ public class SplashActivity extends AppCompatActivity {
 //        },3000);
     }
 
-    private void signIn(String email, String password) {
-        auth.signInWithEmailAndPassword(email, password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
-            @Override
-            public void onSuccess(AuthResult authResult) {
-                showToast("Login Success Full");
-                PreferenceManager preferenceManager = new PreferenceManager(SplashActivity.this);
-                preferenceManager.putString(Constant.KEY_EMAIL, Objects.requireNonNull(Objects.requireNonNull(authResult.getUser()).getEmail()));
-                preferenceManager.putString(Constant.KEY_USER_ID, authResult.getUser().getUid());
-                startActivity(new Intent(SplashActivity.this, MainActivity.class));
-                finishAffinity();
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                showToast("Login Failed " + e.getMessage());
-            }
-        });
-    }
+//    private void signIn(String email, String password) {
+//        auth.signInWithEmailAndPassword(email, password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+//            @Override
+//            public void onSuccess(AuthResult authResult) {
+//                showToast("Login Success Full");
+//                PreferenceManager preferenceManager = new PreferenceManager(SplashActivity.this);
+//                preferenceManager.putString(Constant.KEY_EMAIL, Objects.requireNonNull(Objects.requireNonNull(authResult.getUser()).getEmail()));
+//                preferenceManager.putString(Constant.KEY_USER_ID, authResult.getUser().getUid());
+//                startActivity(new Intent(SplashActivity.this, MainActivity.class));
+//                finishAffinity();
+//            }
+//        }).addOnFailureListener(new OnFailureListener() {
+//            @Override
+//            public void onFailure(@NonNull Exception e) {
+//                showToast("Login Failed " + e.getMessage());
+//            }
+//        });
+//    }
 
     void newActivity(ConstraintLayout layout) {
 
@@ -131,18 +132,18 @@ public class SplashActivity extends AppCompatActivity {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
-    private Boolean isValidSignInDetails() {
-        if (binding.emailField.getText().toString().trim().isEmpty()) {
-            showToast("Enter Email");
-            return false;
-        } else if (!Patterns.EMAIL_ADDRESS.matcher(binding.emailField.getText().toString()).matches()) {
-            showToast("Enter valid Email");
-            return false;
-        } else if (binding.passwordField.getText().toString().trim().isEmpty()) {
-            showToast("Enter Password");
-            return false;
-        } else {
-            return true;
-        }
-    }
+//    private Boolean isValidSignInDetails() {
+//        if (binding.emailField.getText().toString().trim().isEmpty()) {
+//            showToast("Enter Email");
+//            return false;
+//        } else if (!Patterns.EMAIL_ADDRESS.matcher(binding.emailField.getText().toString()).matches()) {
+//            showToast("Enter valid Email");
+//            return false;
+//        } else if (binding.passwordField.getText().toString().trim().isEmpty()) {
+//            showToast("Enter Password");
+//            return false;
+//        } else {
+//            return true;
+//        }
+//    }
 }

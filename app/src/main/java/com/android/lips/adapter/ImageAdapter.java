@@ -39,6 +39,9 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.viewHolder> 
     public void onBindViewHolder(@NonNull ImageAdapter.viewHolder holder, int position) {
         ImageModel ImageModel = imageModels.get(position);
         holder.binding.noticeTitle.setText(ImageModel.getImageTitle());
+        if(ImageModel.getDate() !=null){
+            holder.binding.noticeDate.setText(ImageModel.getDate());
+        }
         Glide.with(context).load(ImageModel.getImage()).into(holder.binding.noticeImage);
     }
 

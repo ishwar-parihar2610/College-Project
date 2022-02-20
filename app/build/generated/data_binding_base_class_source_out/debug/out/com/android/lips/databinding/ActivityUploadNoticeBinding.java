@@ -24,6 +24,9 @@ public abstract class ActivityUploadNoticeBinding extends ViewDataBinding {
   public final AppBarLayout appBar;
 
   @NonNull
+  public final ImageView back;
+
+  @NonNull
   public final ConstraintLayout card;
 
   @NonNull
@@ -48,11 +51,13 @@ public abstract class ActivityUploadNoticeBinding extends ViewDataBinding {
   public final MaterialCardView uploadNoticeCard;
 
   protected ActivityUploadNoticeBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      AppBarLayout appBar, ConstraintLayout card, ImageView noticeImg, TextView noticeText,
-      EditText noticeTitleField, ImageView noticeUploadedImage, MaterialButton uploadBtn,
-      ConstraintLayout uploadImageLayout, MaterialCardView uploadNoticeCard) {
+      AppBarLayout appBar, ImageView back, ConstraintLayout card, ImageView noticeImg,
+      TextView noticeText, EditText noticeTitleField, ImageView noticeUploadedImage,
+      MaterialButton uploadBtn, ConstraintLayout uploadImageLayout,
+      MaterialCardView uploadNoticeCard) {
     super(_bindingComponent, _root, _localFieldCount);
     this.appBar = appBar;
+    this.back = back;
     this.card = card;
     this.noticeImg = noticeImg;
     this.noticeText = noticeText;

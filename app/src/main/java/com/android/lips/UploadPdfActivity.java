@@ -73,6 +73,9 @@ public class UploadPdfActivity extends AppCompatActivity {
                 uploadPdf();
             }
         });
+        binding.back.setOnClickListener(v->{
+            finish();
+        });
     }
 
     private void uploadPdf() {

@@ -29,10 +29,22 @@
         android:testOnly="true"
         android:theme="@style/Theme.Lips" >
         <activity
-            android:name="com.android.lips.PdfViewActivity"
+            android:name="com.android.lips.StudentRegisterActivity"
             android:exported="false" />
         <activity
-            android:name="com.android.lips.adapter.PdfAdapter"
+            android:name="com.android.lips.StudentMainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.android.lips.AdminRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.android.lips.StudentLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.android.lips.developerContect"
+            android:exported="false" />
+        <activity
+            android:name="com.android.lips.PdfViewActivity"
             android:exported="false" />
         <activity
             android:name="com.android.lips.ActivityEbook"
@@ -190,6 +202,13 @@
                 android:name="androidx.lifecycle.ProcessLifecycleInitializer"
                 android:value="androidx.startup" />
         </provider>
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
     </application>
 
 </manifest>

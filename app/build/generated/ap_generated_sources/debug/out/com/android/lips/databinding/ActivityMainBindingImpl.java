@@ -15,27 +15,30 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
         sViewsWithIds.put(R.id.appBar, 1);
-        sViewsWithIds.put(R.id.adminText, 2);
-        sViewsWithIds.put(R.id.dashBoardText, 3);
-        sViewsWithIds.put(R.id.scrollView, 4);
-        sViewsWithIds.put(R.id.uploadNoticeCard, 5);
-        sViewsWithIds.put(R.id.noticeImg, 6);
-        sViewsWithIds.put(R.id.noticeText, 7);
-        sViewsWithIds.put(R.id.uploadImageCard, 8);
-        sViewsWithIds.put(R.id.uploadImg, 9);
-        sViewsWithIds.put(R.id.uploadText, 10);
-        sViewsWithIds.put(R.id.uploadE_BookCard, 11);
-        sViewsWithIds.put(R.id.uploadEBook, 12);
-        sViewsWithIds.put(R.id.uploadEBookText, 13);
-        sViewsWithIds.put(R.id.uploadFacilityCard, 14);
-        sViewsWithIds.put(R.id.uploadFacilityImg, 15);
-        sViewsWithIds.put(R.id.uploadFacilityText, 16);
-        sViewsWithIds.put(R.id.deleteCard, 17);
-        sViewsWithIds.put(R.id.deleteNotice, 18);
-        sViewsWithIds.put(R.id.deleteText, 19);
-        sViewsWithIds.put(R.id.logoutCard, 20);
-        sViewsWithIds.put(R.id.logoutImg, 21);
-        sViewsWithIds.put(R.id.logoutText, 22);
+        sViewsWithIds.put(R.id.profileImage, 2);
+        sViewsWithIds.put(R.id.adminText, 3);
+        sViewsWithIds.put(R.id.dashBoardText, 4);
+        sViewsWithIds.put(R.id.scrollView, 5);
+        sViewsWithIds.put(R.id.uploadNoticeCard, 6);
+        sViewsWithIds.put(R.id.noticeImg, 7);
+        sViewsWithIds.put(R.id.noticeText, 8);
+        sViewsWithIds.put(R.id.uploadImageCard, 9);
+        sViewsWithIds.put(R.id.uploadImg, 10);
+        sViewsWithIds.put(R.id.uploadText, 11);
+        sViewsWithIds.put(R.id.uploadE_BookCard, 12);
+        sViewsWithIds.put(R.id.uploadEBook, 13);
+        sViewsWithIds.put(R.id.uploadEBookText, 14);
+        sViewsWithIds.put(R.id.uploadFacilityCard, 15);
+        sViewsWithIds.put(R.id.uploadFacilityImg, 16);
+        sViewsWithIds.put(R.id.uploadFacilityText, 17);
+        sViewsWithIds.put(R.id.deleteCard, 18);
+        sViewsWithIds.put(R.id.deleteNotice, 19);
+        sViewsWithIds.put(R.id.deleteText, 20);
+        sViewsWithIds.put(R.id.logoutCard, 21);
+        sViewsWithIds.put(R.id.logoutImg, 22);
+        sViewsWithIds.put(R.id.logoutText, 23);
+        sViewsWithIds.put(R.id.developerContact, 24);
+        sViewsWithIds.put(R.id.developerText, 25);
     }
     // views
     @NonNull
@@ -46,32 +49,35 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityMainBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 23, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 26, sIncludes, sViewsWithIds));
     }
     private ActivityMainBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.TextView) bindings[2]
-            , (com.google.android.material.appbar.AppBarLayout) bindings[1]
             , (android.widget.TextView) bindings[3]
-            , (com.google.android.material.card.MaterialCardView) bindings[17]
-            , (android.widget.ImageView) bindings[18]
-            , (android.widget.TextView) bindings[19]
-            , (com.google.android.material.card.MaterialCardView) bindings[20]
-            , (android.widget.ImageView) bindings[21]
-            , (android.widget.TextView) bindings[22]
-            , (android.widget.ImageView) bindings[6]
-            , (android.widget.TextView) bindings[7]
-            , (android.widget.ScrollView) bindings[4]
-            , (android.widget.ImageView) bindings[12]
-            , (com.google.android.material.card.MaterialCardView) bindings[11]
-            , (android.widget.TextView) bindings[13]
-            , (com.google.android.material.card.MaterialCardView) bindings[14]
-            , (android.widget.ImageView) bindings[15]
-            , (android.widget.TextView) bindings[16]
-            , (com.google.android.material.card.MaterialCardView) bindings[8]
-            , (android.widget.ImageView) bindings[9]
-            , (com.google.android.material.card.MaterialCardView) bindings[5]
-            , (android.widget.TextView) bindings[10]
+            , (com.google.android.material.appbar.AppBarLayout) bindings[1]
+            , (android.widget.TextView) bindings[4]
+            , (com.google.android.material.card.MaterialCardView) bindings[18]
+            , (android.widget.ImageView) bindings[19]
+            , (android.widget.TextView) bindings[20]
+            , (com.google.android.material.card.MaterialCardView) bindings[24]
+            , (android.widget.TextView) bindings[25]
+            , (com.google.android.material.card.MaterialCardView) bindings[21]
+            , (android.widget.ImageView) bindings[22]
+            , (android.widget.TextView) bindings[23]
+            , (android.widget.ImageView) bindings[7]
+            , (android.widget.TextView) bindings[8]
+            , (com.makeramen.roundedimageview.RoundedImageView) bindings[2]
+            , (android.widget.ScrollView) bindings[5]
+            , (android.widget.ImageView) bindings[13]
+            , (com.google.android.material.card.MaterialCardView) bindings[12]
+            , (android.widget.TextView) bindings[14]
+            , (com.google.android.material.card.MaterialCardView) bindings[15]
+            , (android.widget.ImageView) bindings[16]
+            , (android.widget.TextView) bindings[17]
+            , (com.google.android.material.card.MaterialCardView) bindings[9]
+            , (android.widget.ImageView) bindings[10]
+            , (com.google.android.material.card.MaterialCardView) bindings[6]
+            , (android.widget.TextView) bindings[11]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);

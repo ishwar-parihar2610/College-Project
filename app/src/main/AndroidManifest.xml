@@ -13,10 +13,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lips">
         <activity
-            android:name=".PdfViewActivity"
+            android:name=".StudentRegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".adapter.PdfAdapter"
+            android:name=".StudentMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".developerContect"
+            android:exported="false" />
+        <activity
+            android:name=".PdfViewActivity"
             android:exported="false" />
         <activity
             android:name=".ActivityEbook"

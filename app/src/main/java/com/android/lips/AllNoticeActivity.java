@@ -39,6 +39,9 @@ public class AllNoticeActivity extends AppCompatActivity {
         binding.addBtn.setOnClickListener(v->{
             startActivity(new Intent(AllNoticeActivity.this,ActivityUploadNotice.class));
         });
+        binding.back.setOnClickListener(v->{
+            finish();
+        });
     }
 
   void readData(){

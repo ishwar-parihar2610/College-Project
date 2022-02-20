@@ -23,72 +23,42 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/loginForm"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:visibility="gone"
-        app:layout_constraintTop_toBottomOf="@id/luckyLogo"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <EditText
-            app:layout_constraintTop_toTopOf="parent"
-            android:id="@+id/emailField"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_50sdp"
-            android:layout_margin="@dimen/_30sdp"
-            android:hint="Email"
-            android:inputType="text"
-            android:textSize="@dimen/_12ssp"
-            android:textColorHint="@color/white"
-            android:fontFamily="@font/rubik_regular"
-            android:paddingLeft="@dimen/_10sdp"
-            android:textColor="@color/white"
-            android:background="@drawable/background"/>
 
-        <EditText
-            android:inputType="textPassword"
-            android:id="@+id/passwordField"
-            android:layout_width="0dp"
-            android:textSize="@dimen/_12ssp"
-            android:layout_height="@dimen/_50sdp"
-            app:layout_constraintTop_toBottomOf="@id/emailField"
-            android:layout_marginTop="@dimen/_20sdp"
-            app:layout_constraintStart_toStartOf="@id/emailField"
-            app:layout_constraintEnd_toEndOf="@id/emailField"
-            android:hint="Password"
-            android:textColorHint="@color/white"
-            android:fontFamily="@font/rubik_regular"
-            android:paddingLeft="@dimen/_10sdp"
-            android:textColor="@color/white"
-            android:background="@drawable/background"/>
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="0dp"
-            android:text="Login"
-            android:id="@+id/loginBtn"
+            android:text="Faculty"
+            android:id="@+id/fclBtn"
             android:textColor="#030B1B"
             android:fontFamily="@font/rubik_regular"
             android:textSize="@dimen/_12ssp"
             android:layout_height="@dimen/_50sdp"
              android:backgroundTint="@color/white"
             app:cornerRadius="@dimen/_10sdp"
-            app:layout_constraintTop_toBottomOf="@id/passwordField"
-            app:layout_constraintStart_toStartOf="@id/passwordField"
-            app:layout_constraintEnd_toEndOf="@id/passwordField"
-            android:layout_marginTop="@dimen/_30sdp"/>
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="@dimen/_30sdp"/>
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="0dp"
-            android:text="Register"
-            android:id="@+id/registerBtn"
+            android:text="Student"
+            android:id="@+id/studentBtn"
             android:textColor="#030B1B"
             android:fontFamily="@font/rubik_regular"
             android:textSize="@dimen/_12ssp"
             android:layout_height="@dimen/_50sdp"
             android:backgroundTint="@color/white"
             app:cornerRadius="@dimen/_10sdp"
-            app:layout_constraintTop_toBottomOf="@id/loginBtn"
-            app:layout_constraintStart_toStartOf="@id/passwordField"
-            app:layout_constraintEnd_toEndOf="@id/passwordField"
-            android:layout_marginTop="@dimen/_10sdp" />
+            app:layout_constraintTop_toBottomOf="@id/fclBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="@dimen/_30sdp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

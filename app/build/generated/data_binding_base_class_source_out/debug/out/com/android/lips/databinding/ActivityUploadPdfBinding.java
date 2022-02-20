@@ -26,6 +26,9 @@ public abstract class ActivityUploadPdfBinding extends ViewDataBinding {
   public final AppBarLayout appBar;
 
   @NonNull
+  public final ImageView back;
+
+  @NonNull
   public final TextView pdfText;
 
   @NonNull
@@ -44,12 +47,13 @@ public abstract class ActivityUploadPdfBinding extends ViewDataBinding {
   public final TextView uploadEBookText;
 
   protected ActivityUploadPdfBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      TextView adminText, AppBarLayout appBar, TextView pdfText, EditText pdfTitle,
+      TextView adminText, AppBarLayout appBar, ImageView back, TextView pdfText, EditText pdfTitle,
       MaterialButton uploadBtn, ImageView uploadEBook, MaterialCardView uploadEBookCard,
       TextView uploadEBookText) {
     super(_bindingComponent, _root, _localFieldCount);
     this.adminText = adminText;
     this.appBar = appBar;
+    this.back = back;
     this.pdfText = pdfText;
     this.pdfTitle = pdfTitle;
     this.uploadBtn = uploadBtn;

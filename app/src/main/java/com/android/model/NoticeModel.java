@@ -1,6 +1,8 @@
 package com.android.model;
 
-public class NoticeModel {
+import java.io.Serializable;
+
+public class NoticeModel implements Serializable {
     String noticeTitle;
     String noticeImage;
 

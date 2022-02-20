@@ -6,6 +6,9 @@ import android.widget.Toast;
 public class Constant {
 
         public static final String KEY_COLLECTION_ADMIN="Admin";
+        public static final String KEY_DATE="date";
+        public static final String KEY_STUDENT_COLLECTION="student";
+        public static final String KEY_STUDENT_DOCUMENT="studentInfo";
         public static final String KEY_DOCUMENT_NOTICEBOARD="noticeBord";
         public static final String KEY_DOCUMENT_GALLERY="gallery";
         public static final String KEY_OCCASION_TITLE="occasion";
@@ -17,11 +20,21 @@ public class Constant {
         public static final String KEY_BOOK_TITLE="bookTitle";
         public static final String KEY_DEPARTMENT="department";
         public static final String KEY_SUBJECT="subject";
+        public static final String STUDENT_ID="subject";
 
 
 
 
         public static final String KEY_NAME="name";
+
+        public static final String STUDENT_NAME="student name";
+        public static final String STUDENT_EMAIL="student email";
+        public static final String STUDENT_PASSWORD="student password";
+        public static final String STUDENT_PROFILE_IMAGE="student profile image";
+        public static final String STUDENT_CLASS="student class";
+        public static final String STUDENT_FATHER_NAME="father name";
+
+
         public static final String KEY_NOTICE_TITLE="title";
         public static final String KEY_NOTICE_IMAGE="image";
 

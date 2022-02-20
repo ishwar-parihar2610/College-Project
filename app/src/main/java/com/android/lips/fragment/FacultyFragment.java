@@ -50,6 +50,7 @@ public class FacultyFragment extends Fragment {
     private void readData() {
         binding.progressBar.setVisibility(View.VISIBLE);
         admin.document(Constant.KEY_DOCUMENT_USER).collection("userInfo").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            @SuppressLint("NotifyDataSetChanged")
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
                 for (QueryDocumentSnapshot queryDocumentSnapshot : task.getResult()) {

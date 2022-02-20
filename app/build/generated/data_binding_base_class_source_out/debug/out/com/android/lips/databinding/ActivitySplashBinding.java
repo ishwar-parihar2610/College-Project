@@ -4,7 +4,6 @@ package com.android.lips.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,10 +17,7 @@ import java.lang.Object;
 
 public abstract class ActivitySplashBinding extends ViewDataBinding {
   @NonNull
-  public final EditText emailField;
-
-  @NonNull
-  public final MaterialButton loginBtn;
+  public final MaterialButton fclBtn;
 
   @NonNull
   public final ConstraintLayout loginForm;
@@ -30,21 +26,16 @@ public abstract class ActivitySplashBinding extends ViewDataBinding {
   public final ImageView luckyLogo;
 
   @NonNull
-  public final EditText passwordField;
-
-  @NonNull
-  public final MaterialButton registerBtn;
+  public final MaterialButton studentBtn;
 
   protected ActivitySplashBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      EditText emailField, MaterialButton loginBtn, ConstraintLayout loginForm, ImageView luckyLogo,
-      EditText passwordField, MaterialButton registerBtn) {
+      MaterialButton fclBtn, ConstraintLayout loginForm, ImageView luckyLogo,
+      MaterialButton studentBtn) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.emailField = emailField;
-    this.loginBtn = loginBtn;
+    this.fclBtn = fclBtn;
     this.loginForm = loginForm;
     this.luckyLogo = luckyLogo;
-    this.passwordField = passwordField;
-    this.registerBtn = registerBtn;
+    this.studentBtn = studentBtn;
   }
 
   @NonNull

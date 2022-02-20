@@ -14,6 +14,7 @@ import androidx.databinding.ViewDataBinding;
 import com.android.lips.R;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.card.MaterialCardView;
+import com.makeramen.roundedimageview.RoundedImageView;
 import java.lang.Deprecated;
 import java.lang.Object;
 
@@ -37,6 +38,12 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   public final TextView deleteText;
 
   @NonNull
+  public final MaterialCardView developerContact;
+
+  @NonNull
+  public final TextView developerText;
+
+  @NonNull
   public final MaterialCardView logoutCard;
 
   @NonNull
@@ -50,6 +57,9 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
 
   @NonNull
   public final TextView noticeText;
+
+  @NonNull
+  public final RoundedImageView profileImage;
 
   @NonNull
   public final ScrollView scrollView;
@@ -86,12 +96,13 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
 
   protected ActivityMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
       TextView adminText, AppBarLayout appBar, TextView dashBoardText, MaterialCardView deleteCard,
-      ImageView deleteNotice, TextView deleteText, MaterialCardView logoutCard, ImageView logoutImg,
-      TextView logoutText, ImageView noticeImg, TextView noticeText, ScrollView scrollView,
-      ImageView uploadEBook, MaterialCardView uploadEBookCard, TextView uploadEBookText,
-      MaterialCardView uploadFacilityCard, ImageView uploadFacilityImg, TextView uploadFacilityText,
-      MaterialCardView uploadImageCard, ImageView uploadImg, MaterialCardView uploadNoticeCard,
-      TextView uploadText) {
+      ImageView deleteNotice, TextView deleteText, MaterialCardView developerContact,
+      TextView developerText, MaterialCardView logoutCard, ImageView logoutImg, TextView logoutText,
+      ImageView noticeImg, TextView noticeText, RoundedImageView profileImage,
+      ScrollView scrollView, ImageView uploadEBook, MaterialCardView uploadEBookCard,
+      TextView uploadEBookText, MaterialCardView uploadFacilityCard, ImageView uploadFacilityImg,
+      TextView uploadFacilityText, MaterialCardView uploadImageCard, ImageView uploadImg,
+      MaterialCardView uploadNoticeCard, TextView uploadText) {
     super(_bindingComponent, _root, _localFieldCount);
     this.adminText = adminText;
     this.appBar = appBar;
@@ -99,11 +110,14 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
     this.deleteCard = deleteCard;
     this.deleteNotice = deleteNotice;
     this.deleteText = deleteText;
+    this.developerContact = developerContact;
+    this.developerText = developerText;
     this.logoutCard = logoutCard;
     this.logoutImg = logoutImg;
     this.logoutText = logoutText;
     this.noticeImg = noticeImg;
     this.noticeText = noticeText;
+    this.profileImage = profileImage;
     this.scrollView = scrollView;
     this.uploadEBook = uploadEBook;
     this.uploadEBookCard = uploadEBookCard;

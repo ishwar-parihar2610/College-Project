@@ -1,6 +1,8 @@
 package com.android.model;
 
-public class EBookModel {
+import java.io.Serializable;
+
+public class EBookModel implements Serializable {
     String eBookTitle;
     String eBookPdf;
 

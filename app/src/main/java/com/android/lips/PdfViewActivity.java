@@ -39,7 +39,12 @@ public class PdfViewActivity extends AppCompatActivity {
             new pdfViewer().execute(url);
 
         }
-        
+        if(getIntent().getStringExtra("pdfName")!=null){
+            binding.adminText.setText(getIntent().getStringExtra("pdfName"));
+        }
+        binding.back.setOnClickListener(v->{
+            finish();
+        });
 
 
     }

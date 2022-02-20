@@ -40,6 +40,9 @@ public class ActivityEbook extends AppCompatActivity {
         binding.addPdfBtn.setOnClickListener(v -> {
             startActivity(new Intent(ActivityEbook.this, UploadPdfActivity.class));
         });
+        binding.back.setOnClickListener(v->{
+            finish();
+        });
         readData();
 
     }

@@ -63,6 +63,10 @@ public class ActivityUploadNotice extends AppCompatActivity {
             openGallery();
         });
 
+        binding.back.setOnClickListener(v->{
+            finish();
+        });
+
         binding.uploadBtn.setOnClickListener(v -> {
             if (binding.noticeTitleField.getText().toString().isEmpty()) {
                 binding.noticeTitleField.setError("Empty");

@@ -4,6 +4,7 @@ package com.android.lips.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,16 +25,21 @@ public abstract class ActivityGroupBinding extends ViewDataBinding {
   public final AppBarLayout appBar;
 
   @NonNull
+  public final ImageView back;
+
+  @NonNull
   public final TabLayout tabLayout;
 
   @NonNull
   public final ViewPager2 viewPager;
 
   protected ActivityGroupBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      TextView adminText, AppBarLayout appBar, TabLayout tabLayout, ViewPager2 viewPager) {
+      TextView adminText, AppBarLayout appBar, ImageView back, TabLayout tabLayout,
+      ViewPager2 viewPager) {
     super(_bindingComponent, _root, _localFieldCount);
     this.adminText = adminText;
     this.appBar = appBar;
+    this.back = back;
     this.tabLayout = tabLayout;
     this.viewPager = viewPager;
   }

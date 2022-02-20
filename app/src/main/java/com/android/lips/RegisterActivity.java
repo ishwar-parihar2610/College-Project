@@ -51,6 +51,7 @@ public class RegisterActivity extends AppCompatActivity {
     StorageReference storageReference;
     Uri imageUrl;
     FirebaseDatabase firebaseDatabase;
+    PreferenceManager preferenceManager ;
 
 
     @Override
@@ -63,7 +64,7 @@ public class RegisterActivity extends AppCompatActivity {
         _auth = FirebaseAuth.getInstance();
         progressDialog = new ProgressDialog(this);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_register);
-
+        preferenceManager=  new PreferenceManager(RegisterActivity.this);
         binding.layoutImage.setOnClickListener(v -> {
             Intent pickImage = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
             startActivityForResult(pickImage, requestCodeValue);
@@ -82,7 +83,7 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
-                    PreferenceManager preferenceManager = new PreferenceManager(RegisterActivity.this);
+
                     preferenceManager.putString(Constant.KEY_EMAIL, Objects.requireNonNull(_auth.getCurrentUser()).getEmail());
                     preferenceManager.putString(Constant.KEY_USER_ID, _auth.getUid());
 
@@ -110,7 +111,10 @@ public class RegisterActivity extends AppCompatActivity {
         registerValue.put(Constant.KEY_EMAIL, email);
         registerValue.put(Constant.KEY_PASSWORD, password);
         registerValue.put(Constant.KEY_NAME, "Name :"+ name);
+
         registerValue.put(Constant.KEY_PROFILE_IMAGE, imgUrl);
+
+        preferenceManager.putString(Constant.KEY_PROFILE_IMAGE,imgUrl);
         registerValue.put(Constant.KEY_DEPARTMENT,"Department :"+ department);
         registerValue.put(Constant.KEY_SUBJECT, "Subject :"+ subject);
 

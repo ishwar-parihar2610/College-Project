@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -12,11 +13,13 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Base64;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
 import com.android.lips.databinding.ActivityUploadImageBinding;
 import com.android.lips.utilities.Constant;
+import com.android.lips.utilities.PreferenceManager;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -30,7 +33,12 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 import java.io.ByteArrayOutputStream;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Objects;
 
 public class ActivityUploadImage extends AppCompatActivity {
@@ -43,6 +51,8 @@ public class ActivityUploadImage extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
     ProgressDialog progressDialog;
     Uri imageUri;
+    String  currentTime;
+    PreferenceManager preferenceManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,12 +60,26 @@ public class ActivityUploadImage extends AppCompatActivity {
         dataBase=FirebaseFirestore.getInstance();
         progressDialog=new ProgressDialog(this);
         firebaseDatabase = FirebaseDatabase.getInstance();
+        preferenceManager=new PreferenceManager(this);
+
+
+//        currentTime= Calendar.getInstance().getTime();
+
+        SimpleDateFormat sdf = new SimpleDateFormat("dd MMMM,yyyy  hh:mm a", Locale.getDefault());
+         currentTime = sdf.format(new Date());
+
+      //  @SuppressLint("SimpleDateFormat") SimpleDateFormat format=new SimpleDateFormat("");
+
+        Log.d("TAG", "uploadToFireStore: "+currentTime);
+
         storageReference = FirebaseStorage.getInstance("gs://mycollegeapp-a3012.appspot.com/").getReference();
         binding= DataBindingUtil.setContentView(this,R.layout.activity_upload_image);
         binding.uploadImageCard.setOnClickListener(v->{
             openGallery();
         });
-
+        binding.back.setOnClickListener(v->{
+            finish();
+        });
         binding.uploadBtn.setOnClickListener(v->{
             if(binding.noticeTitleField.getText().toString().isEmpty()){
                 binding.noticeTitleField.setError("Empty");
@@ -72,9 +96,11 @@ public class ActivityUploadImage extends AppCompatActivity {
     }
 
     void uploadToFireStore(String occasionTitle,String imageUrl){
+
         HashMap<String, String> noticeData = new HashMap();
         noticeData.put(Constant.KEY_OCCASION_TITLE, occasionTitle);
         noticeData.put(Constant.KEY_NOTICE_IMAGE,imageUrl);
+        noticeData.put(Constant.KEY_DATE,currentTime);
         dataBase.collection(Constant.KEY_COLLECTION_ADMIN).document(Constant.KEY_DOCUMENT_GALLERY).collection("images").document().set(noticeData).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void unused) {

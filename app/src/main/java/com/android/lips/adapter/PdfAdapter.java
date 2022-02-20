@@ -47,6 +47,7 @@ public class PdfAdapter extends RecyclerView.Adapter<PdfAdapter.viewHolder> {
         holder.binding.layout.setOnClickListener(v->{
             Intent intent=new Intent(context, PdfViewActivity.class);
             intent.putExtra("pdfUrl",eBookModel.geteBookPdf());
+            intent.putExtra("pdfName",eBookModel.geteBookTitle());
             context.startActivity(intent);
         });
 

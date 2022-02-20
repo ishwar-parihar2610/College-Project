@@ -1,6 +1,8 @@
 package com.android.model;
 
-public class FacultyModel {
+import java.io.Serializable;
+
+public class FacultyModel implements Serializable {
     String userName;
     String department;
     String subject;

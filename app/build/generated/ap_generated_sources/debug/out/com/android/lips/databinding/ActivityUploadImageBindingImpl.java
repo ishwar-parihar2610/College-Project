@@ -15,13 +15,14 @@ public class ActivityUploadImageBindingImpl extends ActivityUploadImageBinding  
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
         sViewsWithIds.put(R.id.appBar, 1);
-        sViewsWithIds.put(R.id.card, 2);
-        sViewsWithIds.put(R.id.uploadImageCard, 3);
-        sViewsWithIds.put(R.id.uploadImg, 4);
-        sViewsWithIds.put(R.id.uploadText, 5);
-        sViewsWithIds.put(R.id.UploadedImage, 6);
-        sViewsWithIds.put(R.id.noticeTitleField, 7);
-        sViewsWithIds.put(R.id.uploadBtn, 8);
+        sViewsWithIds.put(R.id.back, 2);
+        sViewsWithIds.put(R.id.card, 3);
+        sViewsWithIds.put(R.id.uploadImageCard, 4);
+        sViewsWithIds.put(R.id.uploadImg, 5);
+        sViewsWithIds.put(R.id.uploadText, 6);
+        sViewsWithIds.put(R.id.UploadedImage, 7);
+        sViewsWithIds.put(R.id.noticeTitleField, 8);
+        sViewsWithIds.put(R.id.uploadBtn, 9);
     }
     // views
     @NonNull
@@ -32,18 +33,19 @@ public class ActivityUploadImageBindingImpl extends ActivityUploadImageBinding  
     // Inverse Binding Event Handlers
 
     public ActivityUploadImageBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 9, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 10, sIncludes, sViewsWithIds));
     }
     private ActivityUploadImageBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.ImageView) bindings[6]
+            , (android.widget.ImageView) bindings[7]
             , (com.google.android.material.appbar.AppBarLayout) bindings[1]
-            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[2]
-            , (android.widget.EditText) bindings[7]
-            , (com.google.android.material.button.MaterialButton) bindings[8]
-            , (com.google.android.material.card.MaterialCardView) bindings[3]
-            , (android.widget.ImageView) bindings[4]
-            , (android.widget.TextView) bindings[5]
+            , (android.widget.ImageView) bindings[2]
+            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[3]
+            , (android.widget.EditText) bindings[8]
+            , (com.google.android.material.button.MaterialButton) bindings[9]
+            , (com.google.android.material.card.MaterialCardView) bindings[4]
+            , (android.widget.ImageView) bindings[5]
+            , (android.widget.TextView) bindings[6]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);

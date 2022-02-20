@@ -27,6 +27,9 @@ public abstract class ActivityUploadImageBinding extends ViewDataBinding {
   public final AppBarLayout appBar;
 
   @NonNull
+  public final ImageView back;
+
+  @NonNull
   public final ConstraintLayout card;
 
   @NonNull
@@ -45,12 +48,13 @@ public abstract class ActivityUploadImageBinding extends ViewDataBinding {
   public final TextView uploadText;
 
   protected ActivityUploadImageBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ImageView UploadedImage, AppBarLayout appBar, ConstraintLayout card,
+      ImageView UploadedImage, AppBarLayout appBar, ImageView back, ConstraintLayout card,
       EditText noticeTitleField, MaterialButton uploadBtn, MaterialCardView uploadImageCard,
       ImageView uploadImg, TextView uploadText) {
     super(_bindingComponent, _root, _localFieldCount);
     this.UploadedImage = UploadedImage;
     this.appBar = appBar;
+    this.back = back;
     this.card = card;
     this.noticeTitleField = noticeTitleField;
     this.uploadBtn = uploadBtn;

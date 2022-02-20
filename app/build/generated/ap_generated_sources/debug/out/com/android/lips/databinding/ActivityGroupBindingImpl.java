@@ -16,8 +16,9 @@ public class ActivityGroupBindingImpl extends ActivityGroupBinding  {
         sViewsWithIds = new android.util.SparseIntArray();
         sViewsWithIds.put(R.id.appBar, 1);
         sViewsWithIds.put(R.id.adminText, 2);
-        sViewsWithIds.put(R.id.tabLayout, 3);
-        sViewsWithIds.put(R.id.viewPager, 4);
+        sViewsWithIds.put(R.id.back, 3);
+        sViewsWithIds.put(R.id.tabLayout, 4);
+        sViewsWithIds.put(R.id.viewPager, 5);
     }
     // views
     @NonNull
@@ -28,14 +29,15 @@ public class ActivityGroupBindingImpl extends ActivityGroupBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityGroupBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 5, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 6, sIncludes, sViewsWithIds));
     }
     private ActivityGroupBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
             , (android.widget.TextView) bindings[2]
             , (com.google.android.material.appbar.AppBarLayout) bindings[1]
-            , (com.google.android.material.tabs.TabLayout) bindings[3]
-            , (androidx.viewpager2.widget.ViewPager2) bindings[4]
+            , (android.widget.ImageView) bindings[3]
+            , (com.google.android.material.tabs.TabLayout) bindings[4]
+            , (androidx.viewpager2.widget.ViewPager2) bindings[5]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentMainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:elevation="@dimen/_2sdp"
+        android:background="#0a0a32"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/profileImage"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="@dimen/_35sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                app:riv_oval="true"
+                android:scaleType="centerCrop"
+                android:layout_height="@dimen/_35sdp" />
+
+
+            <TextView
+                android:id="@+id/adminText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_semibold"
+                android:text="Home"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/white"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/frame_layout"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:defaultNavHost="true"
+        app:layout_constraintTop_toBottomOf="@id/appBar"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation_bar"
+        app:navGraph="@navigation/bottom_navigation"/>
+
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/_50sdp"
+       android:id="@+id/bottom_navigation_bar"
+       android:background="#0a0a32"
+       app:layout_constraintBottom_toBottomOf="parent">
+
+       <ImageView
+           android:id="@+id/home"
+           android:layout_width="@dimen/_20sdp"
+           android:layout_height="@dimen/_20sdp"
+           android:src="@drawable/ic_home"
+           app:tint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+           android:layout_marginBottom="@dimen/_18sdp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintEnd_toStartOf="@id/gallery"/>
+
+       <TextView
+           android:id="@+id/homeText"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Home"
+           android:textColor="@color/white"
+
+           app:layout_constraintTop_toBottomOf="@id/home"
+           app:layout_constraintStart_toStartOf="@id/home"
+           app:layout_constraintEnd_toEndOf="@id/home"
+           />
+
+       <ImageView
+           android:id="@+id/gallery"
+           android:layout_width="@dimen/_20sdp"
+           android:layout_height="@dimen/_20sdp"
+           android:src="@drawable/ic_gallery"
+           app:tint="@color/white"
+           app:layout_constraintEnd_toStartOf="@id/notice"
+          app:layout_constraintBottom_toBottomOf="parent"
+           android:layout_marginBottom="@dimen/_18sdp"
+           app:layout_constraintStart_toEndOf="@id/home"
+           app:layout_constraintTop_toTopOf="parent"/>
+
+       <TextView
+           android:id="@+id/galleryText"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Gallery"
+           android:textColor="@color/white"
+
+           app:layout_constraintTop_toBottomOf="@id/gallery"
+           app:layout_constraintStart_toStartOf="@id/gallery"
+           app:layout_constraintEnd_toEndOf="@id/gallery"
+
+           />
+
+       <ImageView
+           android:id="@+id/notice"
+           android:layout_width="@dimen/_20sdp"
+           android:layout_height="@dimen/_20sdp"
+           android:src="@drawable/ic_notice"
+           app:tint="@color/white"
+           android:layout_marginBottom="@dimen/_18sdp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintStart_toEndOf="@id/gallery"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintEnd_toStartOf="@id/faculty"/>
+
+       <TextView
+           android:id="@+id/noticeText"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Notice"
+           android:textColor="@color/white"
+
+           app:layout_constraintTop_toBottomOf="@id/notice"
+           app:layout_constraintStart_toStartOf="@id/notice"
+           app:layout_constraintEnd_toEndOf="@id/notice"
+           />
+
+       <ImageView
+           android:id="@+id/faculty"
+           android:layout_width="@dimen/_20sdp"
+           android:layout_height="@dimen/_20sdp"
+           android:src="@drawable/ic_baseline_group_24"
+           app:tint="@color/white"
+          app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintStart_toEndOf="@id/notice"
+           app:layout_constraintEnd_toEndOf="parent"
+           android:layout_marginBottom="@dimen/_18sdp"
+           app:layout_constraintTop_toTopOf="parent"/>
+
+       <TextView
+           android:id="@+id/facultyTxt"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Group"
+           android:textColor="@color/white"
+           app:layout_constraintTop_toBottomOf="@id/notice"
+           app:layout_constraintStart_toStartOf="@id/faculty"
+           app:layout_constraintEnd_toEndOf="@id/faculty"
+
+           />
+
+
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

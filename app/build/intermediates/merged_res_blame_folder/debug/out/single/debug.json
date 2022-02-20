@@ -4,6 +4,230 @@
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\button_background.xml"
     },
     {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_home.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-mdpi\\ic_home.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_about.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-mdpi\\ic_about.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_notice.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-ldpi\\ic_notice.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_all_image.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_all_image.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ishwar.jpg.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-mdpi\\ishwar.jpg"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_cloud_upload_24.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\ic_baseline_cloud_upload_24.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_about.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-ldpi\\ic_about.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_student_login.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_student_login.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\navigation_bottom_navigation.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\navigation\\bottom_navigation.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\font_rubik_light.ttf.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\font\\rubik_light.ttf"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\font_rubik_semibold.ttf.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\font\\rubik_semibold.ttf"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_image_24.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\ic_baseline_image_24.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_home.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_home.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\font_rubik_italic.ttf.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\font\\rubik_italic.ttf"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ishwar.jpg.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xhdpi\\ishwar.jpg"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_about.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xxhdpi\\ic_about.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_notice.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-mdpi\\ic_notice.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_faculty.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-ldpi\\ic_faculty.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ishwar.jpg.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-ldpi\\ishwar.jpg"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\font_rubik_blackitalic.ttf.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\font\\rubik_blackitalic.ttf"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_contect.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-ldpi\\ic_contect.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\font_rubik_lightitalic.ttf.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\font\\rubik_lightitalic.ttf"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_about.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\fragment_about.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_cart_item_bacground.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\cart_item_bacground.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_notics.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\ic_notics.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_contect.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-mdpi\\ic_contect.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_gallery.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\fragment_gallery.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_contect.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-hdpi\\ic_contect.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_gallery.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xxhdpi\\ic_gallery.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_logout.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\ic_logout.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_home.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xhdpi\\ic_home.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_lucky.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-mdpi\\lucky.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_pdf_view.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_pdf_view.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_contect.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xhdpi\\ic_contect.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_group_24.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\ic_baseline_group_24.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_faculty.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_faculty.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_circle.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\ic_circle.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_faculty.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\fragment_faculty.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_register.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\font_rubik_bold.ttf.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\font\\rubik_bold.ttf"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_gallery.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_gallery.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_notice.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_notice.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_delete_24.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\ic_baseline_delete_24.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_notice.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xxhdpi\\ic_notice.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_home.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-hdpi\\ic_home.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_notice_background.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\notice_background.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_ebook.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_ebook.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_student_register.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_student_register.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_notice.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-hdpi\\ic_notice.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_gallery.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-hdpi\\ic_gallery.png"
+    },
+    {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_background.xml.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\background.xml"
     },
@@ -12,64 +236,52 @@
         "source": "F:\\college Project\\Lips\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_gallery.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xhdpi\\ic_gallery.png"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_student.xml.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\fragment_student.xml"
     },
     {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_all_image.xml.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_all_image.xml"
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_arrow_back_24.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\ic_baseline_arrow_back_24.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_home.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_cloud_upload_24.xml.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\ic_baseline_cloud_upload_24.xml"
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ishwar.jpg.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-hdpi\\ishwar.jpg"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_upload_pdf.xml.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_upload_pdf.xml"
     },
     {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\menu_bottom_nav.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\menu\\bottom_nav.xml"
+    },
+    {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_all_notice_item.xml.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\all_notice_item.xml"
-    },
-    {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_image_24.xml.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\ic_baseline_image_24.xml"
-    },
-    {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\font_rubik_semibold.ttf.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\font\\rubik_semibold.ttf"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_lucky.png.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xhdpi\\lucky.png"
     },
     {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\font_rubik_light.ttf.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\font\\rubik_light.ttf"
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_all_notice_item.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\all_notice_item.xml"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_group.xml.flat",
@@ -80,6 +292,22 @@
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_all_notice.xml"
     },
     {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_admin_register.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_admin_register.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_faculty.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xxhdpi\\ic_faculty.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_about.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-hdpi\\ic_about.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_notice.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xhdpi\\ic_notice.png"
+    },
+    {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_lucky.png.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-hdpi\\lucky.png"
     },
@@ -88,12 +316,12 @@
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_lucky.png.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-ldpi\\lucky.png"
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_faculty2.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\fragment_faculty2.xml"
     },
     {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\font_rubik_italic.ttf.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\font\\rubik_italic.ttf"
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_lucky.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-ldpi\\lucky.png"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_pdf.xml.flat",
@@ -112,16 +340,24 @@
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\background_item.xml"
     },
     {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ishwar.jpg.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xxxhdpi\\ishwar.jpg"
+    },
+    {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\font_rubik_regular.ttf.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\font\\rubik_regular.ttf"
     },
     {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\font_rubik_blackitalic.ttf.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\font\\rubik_blackitalic.ttf"
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_student_main.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_student_main.xml"
     },
     {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\font_rubik_lightitalic.ttf.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\font\\rubik_lightitalic.ttf"
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_contect.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xxhdpi\\ic_contect.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ishwar.jpg.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xxhdpi\\ishwar.jpg"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_upload_notice.xml.flat",
@@ -136,16 +372,12 @@
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\font\\rubik_bolditalic.ttf"
     },
     {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_about.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_about.png"
     },
     {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_cart_item_bacground.xml.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\cart_item_bacground.xml"
-    },
-    {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_notics.xml.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\ic_notics.xml"
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_faculty.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-mdpi\\ic_faculty.png"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
@@ -156,16 +388,20 @@
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_about.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xhdpi\\ic_about.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_faculty.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xhdpi\\ic_faculty.png"
+    },
+    {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_item_layout.xml.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\item_layout.xml"
     },
     {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_logout.xml.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\ic_logout.xml"
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_gallery.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-ldpi\\ic_gallery.png"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_image_background.xml.flat",
@@ -184,24 +420,16 @@
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\font\\rubik_semibolditalic.ttf"
     },
     {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_lucky.png.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-mdpi\\lucky.png"
-    },
-    {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_upload_image.xml.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_upload_image.xml"
-    },
-    {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_pdf_view.xml.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_pdf_view.xml"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_group_24.xml.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\ic_baseline_group_24.xml"
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_notice.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\fragment_notice.xml"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\font_rubik_black.ttf.flat",
@@ -212,10 +440,6 @@
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xxhdpi\\lucky.png"
     },
     {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_faculty.xml.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\fragment_faculty.xml"
-    },
-    {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
@@ -224,36 +448,28 @@
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_splash.xml"
     },
     {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_register.xml.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_register.xml"
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_developer_contect.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_developer_contect.xml"
     },
     {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\font_rubik_bold.ttf.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\font\\rubik_bold.ttf"
-    },
-    {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_home.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-ldpi\\ic_home.png"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_all_pdf_list_item.xml.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\all_pdf_list_item.xml"
     },
     {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_delete_24.xml.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\ic_baseline_delete_24.xml"
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_contect.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_contect.png"
     },
     {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_ebook.xml.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_ebook.xml"
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_home.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xxhdpi\\ic_home.png"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\font_rubik_medium.ttf.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\font\\rubik_medium.ttf"
-    },
-    {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_notice_background.xml.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\notice_background.xml"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_lucky.png.flat",
@@ -262,5 +478,13 @@
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\anim_slide_up.xml.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\anim\\slide_up.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_faculty.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-hdpi\\ic_faculty.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_gallery.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-mdpi\\ic_gallery.png"
     }
 ]

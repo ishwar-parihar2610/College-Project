@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".developerContect"
+    android:background="@color/main_background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:elevation="@dimen/_2sdp"
+        android:background="#0a0a32"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+
+            <TextView
+                android:id="@+id/adminText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_semibold"
+                android:text="Developer Contact"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/white"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/ishwar"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/_55sdp"
+      android:layout_margin="@dimen/_10sdp"
+      app:layout_constraintTop_toBottomOf="@id/appBar"
+      android:background="@drawable/background_item">
+
+
+     <com.makeramen.roundedimageview.RoundedImageView
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:id="@+id/ishwarImg"
+         app:layout_constraintBottom_toBottomOf="parent"
+         android:layout_width="@dimen/_35sdp"
+         android:layout_height="@dimen/_35sdp"
+         android:scaleType="centerCrop"
+         android:layout_margin="@dimen/_10sdp"
+         android:src="@drawable/ishwar"
+         app:riv_oval="true"/>
+
+      <TextView
+          android:id="@+id/ishwarName"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Name : ishwar Parihar"
+          android:fontFamily="@font/rubik_regular"
+          android:textSize="@dimen/_12ssp"
+          app:layout_constraintTop_toTopOf="@id/ishwarImg"
+          app:layout_constraintBottom_toBottomOf="@id/ishwarImg"
+
+          app:layout_constraintStart_toEndOf="@id/ishwarImg"
+          android:textColor="@color/white"
+          android:layout_marginLeft="@dimen/_5sdp" />
+
+
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/deepesh"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/ishwar"
+        android:background="@drawable/background_item">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/deepeshImg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:scaleType="centerCrop"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/ic_circle"
+            app:riv_oval="true"/>
+
+        <TextView
+            android:id="@+id/deepeshName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name :Deepesh Solanki"
+            android:fontFamily="@font/rubik_regular"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintTop_toTopOf="@id/deepeshImg"
+            app:layout_constraintBottom_toBottomOf="@id/deepeshImg"
+
+            app:layout_constraintStart_toEndOf="@id/deepeshImg"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/_5sdp" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/chandan"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/deepesh"
+        android:background="@drawable/background_item">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/chandanImg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:scaleType="centerCrop"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/ic_circle"
+            app:riv_oval="true"/>
+
+        <TextView
+            android:id="@+id/chandanName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name :Chandan Singh"
+            android:fontFamily="@font/rubik_regular"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintTop_toTopOf="@id/chandanImg"
+            app:layout_constraintBottom_toBottomOf="@id/chandanImg"
+
+            app:layout_constraintStart_toEndOf="@id/chandanImg"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/_5sdp" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="@dimen/_150sdp"
+        android:text="Source code"
+        android:id="@+id/getSourceCode"
+        android:textColor="#030B1B"
+        android:fontFamily="@font/rubik_regular"
+        android:textSize="@dimen/_12ssp"
+        android:layout_height="@dimen/_40sdp"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/_15sdp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
