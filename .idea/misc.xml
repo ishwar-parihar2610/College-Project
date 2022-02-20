@@ -34,6 +34,7 @@
         <entry key="..\:/college Project/Lips/app/src/main/res/layout/all_notice_item.xml" value="0.2264151024877837" />
         <entry key="..\:/college Project/Lips/app/src/main/res/layout/all_pdf_list_item.xml" value="0.2264151024877837" />
         <entry key="..\:/college Project/Lips/app/src/main/res/layout/fragment_about.xml" value="0.2264151024877837" />
+        <entry key="..\:/college Project/Lips/app/src/main/res/layout/fragment_contact_us.xml" value="0.4075829383886256" />
         <entry key="..\:/college Project/Lips/app/src/main/res/layout/fragment_faculty.xml" value="0.19924529018924966" />
         <entry key="..\:/college Project/Lips/app/src/main/res/layout/fragment_faculty2.xml" value="0.2264151024877837" />
         <entry key="..\:/college Project/Lips/app/src/main/res/layout/fragment_gallery.xml" value="0.19924529018924966" />
@@ -41,8 +42,10 @@
         <entry key="..\:/college Project/Lips/app/src/main/res/layout/fragment_notice.xml" value="0.2264151024877837" />
         <entry key="..\:/college Project/Lips/app/src/main/res/layout/fragment_student.xml" value="0.271484375" />
         <entry key="..\:/college Project/Lips/app/src/main/res/layout/item_layout.xml" value="0.271484375" />
+        <entry key="..\:/college Project/Lips/app/src/main/res/layout/layout_navigation_header.xml" value="0.4075829383886256" />
         <entry key="..\:/college Project/Lips/app/src/main/res/layout/student_item_layout.xml" value="0.271484375" />
         <entry key="..\:/college Project/Lips/app/src/main/res/menu/bottom_nav.xml" value="0.16796875" />
+        <entry key="..\:/college Project/Lips/app/src/main/res/menu/drawer_menu.xml" value="0.2988679352838745" />
       </map>
     </option>
   </component>

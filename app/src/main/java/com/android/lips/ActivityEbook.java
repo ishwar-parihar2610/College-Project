@@ -15,6 +15,7 @@ import com.android.lips.adapter.ImageAdapter;
 import com.android.lips.adapter.PdfAdapter;
 import com.android.lips.databinding.ActivityEbookBinding;
 import com.android.lips.utilities.Constant;
+import com.android.lips.utilities.PreferenceManager;
 import com.android.model.EBookModel;
 import com.android.model.ImageModel;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -31,11 +32,13 @@ public class ActivityEbook extends AppCompatActivity {
     CollectionReference admin = database.collection(Constant.KEY_COLLECTION_ADMIN);
     ActivityEbookBinding binding;
     ArrayList<EBookModel> eBookModelArrayList;
+    PreferenceManager preferenceManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_ebook);
+        preferenceManager=new PreferenceManager(this);
         eBookModelArrayList = new ArrayList<>();
         binding.addPdfBtn.setOnClickListener(v -> {
             startActivity(new Intent(ActivityEbook.this, UploadPdfActivity.class));
@@ -43,6 +46,11 @@ public class ActivityEbook extends AppCompatActivity {
         binding.back.setOnClickListener(v->{
             finish();
         });
+        if(preferenceManager.getString(Constant.KEY_EMAIL)!=null){
+            binding.addPdfBtn.setVisibility(View.VISIBLE);
+        }else{
+            binding.addPdfBtn.setVisibility(View.GONE);
+        }
         readData();
 
     }

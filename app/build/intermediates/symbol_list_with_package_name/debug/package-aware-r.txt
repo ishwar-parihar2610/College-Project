@@ -3375,6 +3375,7 @@ drawable ic_baseline_group_24
 drawable ic_baseline_image_24
 drawable ic_circle
 drawable ic_clock_black_24dp
+drawable ic_code
 drawable ic_contect
 drawable ic_faculty
 drawable ic_gallery
@@ -3393,6 +3394,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_notice
 drawable ic_notics
 drawable ic_pdf
+drawable ic_web
 drawable image_background
 drawable ishwar
 drawable lucky
@@ -3460,6 +3462,7 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id E_Book
 id FUNCTION
 id META
 id NO_DEBUG
@@ -3471,6 +3474,7 @@ id SYM
 id TOP_END
 id TOP_START
 id UploadedImage
+id Website
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -3604,12 +3608,15 @@ id clip_horizontal
 id clip_vertical
 id clockwise
 id closest
+id code
 id collapseActionView
 id compress
 id confirmPasswordField
 id confirm_button
 id constraint
+id contact_us_fragment
 id container
+id contect_us
 id content
 id contentPanel
 id contiguous
@@ -3662,6 +3669,7 @@ id dragLeft
 id dragRight
 id dragStart
 id dragUp
+id drawerLayout
 id dropdown_menu
 id easeIn
 id easeInOut
@@ -3669,6 +3677,7 @@ id easeOut
 id east
 id edit_query
 id elastic
+id email
 id emailField
 id end
 id endToStart
@@ -3758,6 +3767,7 @@ id linear
 id listMode
 id list_item
 id locale
+id logOut
 id loginBtn
 id loginForm
 id loginFrame
@@ -3832,6 +3842,7 @@ id naviagtion_faculty
 id naviagtion_gallery
 id naviagtion_home
 id naviagtion_notice
+id navigationView
 id navigation_Home
 id navigation_Notice
 id navigation_bar_item_active_indicator_view
@@ -4193,6 +4204,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dp_example
 layout fragment_about
+layout fragment_contact_us
 layout fragment_faculty
 layout fragment_faculty2
 layout fragment_gallery
@@ -4200,6 +4212,7 @@ layout fragment_home
 layout fragment_notice
 layout fragment_student
 layout item_layout
+layout layout_navigation_header
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -4284,6 +4297,7 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu bottom_nav
+menu drawer_menu
 menu example_menu
 menu example_menu2
 mipmap ic_launcher

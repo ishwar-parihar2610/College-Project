@@ -24,6 +24,7 @@ import com.android.lips.databinding.ActivityUploadNoticeBindingImpl;
 import com.android.lips.databinding.ActivityUploadPdfBindingImpl;
 import com.android.lips.databinding.AllNoticeItemBindingImpl;
 import com.android.lips.databinding.AllPdfListItemBindingImpl;
+import com.android.lips.databinding.FragmentContactUsBindingImpl;
 import com.android.lips.databinding.FragmentFaculty2BindingImpl;
 import com.android.lips.databinding.FragmentFacultyBindingImpl;
 import com.android.lips.databinding.FragmentGalleryBindingImpl;
@@ -31,6 +32,7 @@ import com.android.lips.databinding.FragmentHomeBindingImpl;
 import com.android.lips.databinding.FragmentNoticeBindingImpl;
 import com.android.lips.databinding.FragmentStudentBindingImpl;
 import com.android.lips.databinding.ItemLayoutBindingImpl;
+import com.android.lips.databinding.LayoutNavigationHeaderBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
@@ -78,21 +80,25 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_ALLPDFLISTITEM = 18;
 
-  private static final int LAYOUT_FRAGMENTFACULTY = 19;
+  private static final int LAYOUT_FRAGMENTCONTACTUS = 19;
 
-  private static final int LAYOUT_FRAGMENTFACULTY2 = 20;
+  private static final int LAYOUT_FRAGMENTFACULTY = 20;
 
-  private static final int LAYOUT_FRAGMENTGALLERY = 21;
+  private static final int LAYOUT_FRAGMENTFACULTY2 = 21;
 
-  private static final int LAYOUT_FRAGMENTHOME = 22;
+  private static final int LAYOUT_FRAGMENTGALLERY = 22;
 
-  private static final int LAYOUT_FRAGMENTNOTICE = 23;
+  private static final int LAYOUT_FRAGMENTHOME = 23;
 
-  private static final int LAYOUT_FRAGMENTSTUDENT = 24;
+  private static final int LAYOUT_FRAGMENTNOTICE = 24;
 
-  private static final int LAYOUT_ITEMLAYOUT = 25;
+  private static final int LAYOUT_FRAGMENTSTUDENT = 25;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(25);
+  private static final int LAYOUT_ITEMLAYOUT = 26;
+
+  private static final int LAYOUT_LAYOUTNAVIGATIONHEADER = 27;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(27);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.activity_admin_register, LAYOUT_ACTIVITYADMINREGISTER);
@@ -113,6 +119,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.activity_upload_pdf, LAYOUT_ACTIVITYUPLOADPDF);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.all_notice_item, LAYOUT_ALLNOTICEITEM);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.all_pdf_list_item, LAYOUT_ALLPDFLISTITEM);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.fragment_contact_us, LAYOUT_FRAGMENTCONTACTUS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.fragment_faculty, LAYOUT_FRAGMENTFACULTY);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.fragment_faculty2, LAYOUT_FRAGMENTFACULTY2);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.fragment_gallery, LAYOUT_FRAGMENTGALLERY);
@@ -120,6 +127,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.fragment_notice, LAYOUT_FRAGMENTNOTICE);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.fragment_student, LAYOUT_FRAGMENTSTUDENT);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.item_layout, LAYOUT_ITEMLAYOUT);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.lips.R.layout.layout_navigation_header, LAYOUT_LAYOUTNAVIGATIONHEADER);
   }
 
   @Override
@@ -239,6 +247,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for all_pdf_list_item is invalid. Received: " + tag);
         }
+        case  LAYOUT_FRAGMENTCONTACTUS: {
+          if ("layout/fragment_contact_us_0".equals(tag)) {
+            return new FragmentContactUsBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_contact_us is invalid. Received: " + tag);
+        }
         case  LAYOUT_FRAGMENTFACULTY: {
           if ("layout/fragment_faculty_0".equals(tag)) {
             return new FragmentFacultyBindingImpl(component, view);
@@ -280,6 +294,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new ItemLayoutBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for item_layout is invalid. Received: " + tag);
+        }
+        case  LAYOUT_LAYOUTNAVIGATIONHEADER: {
+          if ("layout/layout_navigation_header_0".equals(tag)) {
+            return new LayoutNavigationHeaderBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for layout_navigation_header is invalid. Received: " + tag);
         }
       }
     }
@@ -334,7 +354,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(25);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(27);
 
     static {
       sKeys.put("layout/activity_admin_register_0", com.android.lips.R.layout.activity_admin_register);
@@ -355,6 +375,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put("layout/activity_upload_pdf_0", com.android.lips.R.layout.activity_upload_pdf);
       sKeys.put("layout/all_notice_item_0", com.android.lips.R.layout.all_notice_item);
       sKeys.put("layout/all_pdf_list_item_0", com.android.lips.R.layout.all_pdf_list_item);
+      sKeys.put("layout/fragment_contact_us_0", com.android.lips.R.layout.fragment_contact_us);
       sKeys.put("layout/fragment_faculty_0", com.android.lips.R.layout.fragment_faculty);
       sKeys.put("layout/fragment_faculty2_0", com.android.lips.R.layout.fragment_faculty2);
       sKeys.put("layout/fragment_gallery_0", com.android.lips.R.layout.fragment_gallery);
@@ -362,6 +383,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put("layout/fragment_notice_0", com.android.lips.R.layout.fragment_notice);
       sKeys.put("layout/fragment_student_0", com.android.lips.R.layout.fragment_student);
       sKeys.put("layout/item_layout_0", com.android.lips.R.layout.item_layout);
+      sKeys.put("layout/layout_navigation_header_0", com.android.lips.R.layout.layout_navigation_header);
     }
   }
 }

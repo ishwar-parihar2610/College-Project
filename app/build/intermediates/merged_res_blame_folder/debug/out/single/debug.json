@@ -4,24 +4,32 @@
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\button_background.xml"
     },
     {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_contact_us.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\fragment_contact_us.xml"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_home.png.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-mdpi\\ic_home.png"
     },
     {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_code.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\ic_code.xml"
+    },
+    {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_about.png.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-mdpi\\ic_about.png"
     },
     {
-        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_notice.png.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-ldpi\\ic_notice.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_all_image.xml.flat",
@@ -162,6 +170,10 @@
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_group_24.xml.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\ic_baseline_group_24.xml"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\menu_drawer_menu.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\menu\\drawer_menu.xml"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_faculty.png.flat",
@@ -360,6 +372,10 @@
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xxhdpi\\ishwar.jpg"
     },
     {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_web.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable\\ic_web.xml"
+    },
+    {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_upload_notice.xml.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\activity_upload_notice.xml"
     },
@@ -438,6 +454,10 @@
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_lucky.png.flat",
         "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\drawable-xxhdpi\\lucky.png"
+    },
+    {
+        "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\layout_layout_navigation_header.xml.flat",
+        "source": "F:\\college Project\\Lips\\app\\src\\main\\res\\layout\\layout_navigation_header.xml"
     },
     {
         "merged": "F:\\college Project\\Lips\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.png.flat",

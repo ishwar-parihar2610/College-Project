@@ -20,6 +20,9 @@ public class developerContect extends AppCompatActivity {
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
         });
+        binding.back.setOnClickListener(v->{
+            finish();
+        });
 
     }
 }

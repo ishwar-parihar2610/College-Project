@@ -54,6 +54,7 @@ public class StudentLoginActivity extends AppCompatActivity {
                         preferenceManager.putBoolean(Constant.KEY_IS_SIGNED_IN,true);
                         preferenceManager.putString(Constant.STUDENT_ID,documentSnapshot.getId());
                         preferenceManager.putString(Constant.STUDENT_NAME,documentSnapshot.getString(Constant.STUDENT_NAME));
+                        preferenceManager.putString(Constant.STUDENT_EMAIL,documentSnapshot.getString(Constant.STUDENT_EMAIL));
                         preferenceManager.putString(Constant.STUDENT_PROFILE_IMAGE,documentSnapshot.getString(Constant.STUDENT_PROFILE_IMAGE));
                         Intent intent=new Intent(getApplicationContext(),StudentMainActivity.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);

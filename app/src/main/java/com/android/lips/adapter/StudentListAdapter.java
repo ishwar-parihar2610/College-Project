@@ -39,9 +39,9 @@ public class StudentListAdapter extends RecyclerView.Adapter<StudentListAdapter.
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
         studentModel student = studentModels.get(position);
         //    Toast.makeText(context, "name is :"+facultyModel.getDepartment(), Toast.LENGTH_SHORT).show();
-        holder.binding.userName.setText("Name : "+ student.name);
-        holder.binding.department.setText("Father name : "+student.fatherName);
-        holder.binding.subject.setText("Class : "+student.studentClass);
+        holder.binding.userName.setText("Name : " + student.name);
+        holder.binding.department.setText("Father name : " + student.fatherName);
+        holder.binding.subject.setText("Class : " + student.studentClass);
         Glide.with(context).load(student.getProfileImage()).into(holder.binding.profileImageShape);
     }
 
