@@ -71,9 +71,17 @@ public class RegisterActivity extends AppCompatActivity {
         });
         binding.registerBtn.setOnClickListener(v -> {
             if (isValidSignUpDetails()) {
-                createAccount(binding.emailField.getText().toString(), binding.passwordField.getText().toString(), binding.nameField.getText().toString());
+                if(imageUrl!=null){
+                    createAccount(binding.emailField.getText().toString(), binding.passwordField.getText().toString(), binding.nameField.getText().toString());
+                }else{
+                    showToast("Add Profile Image");
+                }
 
-            }
+
+                }
+
+
+
 
         });
     }
@@ -88,6 +96,7 @@ public class RegisterActivity extends AppCompatActivity {
                     preferenceManager.putString(Constant.KEY_USER_ID, _auth.getUid());
 
                     FirebaseUser user = _auth.getCurrentUser();
+
                     uploadImage(email, password, name,binding.departmentField.getText().toString(),binding.subjectField.getText().toString());
 
 
@@ -177,6 +186,8 @@ public class RegisterActivity extends AppCompatActivity {
 
         StorageReference reference = storageReference.child("userImage/" + imageUrl + "-" + System.currentTimeMillis() + ".pdf");
 
+
+
         UploadTask urlTask = reference.putFile(imageUrl);
         Task<Uri> task = urlTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
             @Override
@@ -194,7 +205,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                     Uri downloadUrl = task.getResult();
                     if (downloadUrl != null) {
-                        storeToFirestore(email, password, name, String.valueOf(downloadUrl),subject,department);
+                        storeToFirestore(email, password, name, String.valueOf(downloadUrl), subject, department);
                     }
                 }
             }

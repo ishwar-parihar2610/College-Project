@@ -60,7 +60,12 @@ public class StudentRegisterActivity extends AppCompatActivity {
         });
         binding.registerBtn.setOnClickListener(v -> {
             if (isValidSignUpDetails()) {
-                uploadImage();
+                if(imageUrl!=null){
+                    uploadImage();
+                }else{
+                    showToast("add profile Image");
+                }
+
 
             }
         });
@@ -83,6 +88,7 @@ public class StudentRegisterActivity extends AppCompatActivity {
             preferenceManager.putString(Constant.STUDENT_ID, DocumentReference.getId());
             preferenceManager.putString(Constant.STUDENT_NAME, binding.nameField.getText().toString());
             preferenceManager.putString(Constant.STUDENT_PROFILE_IMAGE, imgUrl);
+            preferenceManager.putString(Constant.STUDENT_EMAIL,binding.emailField.getText().toString());
             Intent intent = new Intent(getApplicationContext(), StudentMainActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
